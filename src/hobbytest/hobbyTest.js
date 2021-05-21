@@ -1,0 +1,42 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
+import "./hobbyTest.css"
+import timer from "./pngs/chronometer.png"
+import ban from "./pngs/ban.png"
+
+function hobbyTest(){
+    return(
+        <div class = "test_main">
+            <div class = "explanation">
+                Take our simple Hobby Test and
+                <br/>
+                get a hobby that is "exactly" your taste!
+            </div>
+            <div class = "button">
+                <Link to='/test'>
+                    <button id = "test_button">Click to test</button>
+                </Link>
+            </div>
+            <div class = "rule">
+                <div class = "rule_image">
+                    <span class = "time">
+                        <img src={timer} alt="timer" width="150px" height="150px"/>
+                    </span>
+                    <span class = "honest">
+                        <img src={ban} alt="ban" width="150px" height="150px"/>
+                    </span>
+                </div>
+                <div class = "rule_explan">
+                    <span class = "time">
+                        It takes about 1-2 minutes
+                    </span>
+                    <span class = "honest">
+                        Modifying your choice is not allowed, so please choose carefully!
+                    </span>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default hobbyTest;
