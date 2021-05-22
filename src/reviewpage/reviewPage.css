@@ -1,0 +1,119 @@
+.header {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 3%;
+    width:20%;
+    margin-left: 10%;
+    float: left;
+    font-size: 50px;
+    
+}
+
+.search {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 40%;
+    /* height: 50vh;  */
+    font-size: 20px; 
+    color: rgb(150, 150, 150);
+    border: 1.5px solid rgb(150, 150, 150);
+    border-radius: 30px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* outline: 2px solid rgb(117, 117, 117); */
+}
+
+.search:focus {
+    outline: none;
+}
+
+input::-ms-clear,
+input::-ms-reveal {display: none; width : 0; height: 0;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+.review-container {
+    margin: 10%;
+    padding-top: 2%;
+}
+.review-each {
+    /* display: flex; */
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid rgb(150, 150, 150);
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.date {
+    font-size: 12px;
+    color:rgb(150, 150, 150);
+}
+
+.review-content {
+    white-space: pre-line;
+    word-break:break-all;
+}
+
+.hashtag-container {
+
+}
+
+.hashtag {
+    margin-right: 3px;
+    font-size: 12px;
+    color:rgb(150, 150, 150);
+}
+
+
+.score-container {
+    display: flex;
+    margin-top: auto;
+    /* width: 80%; */
+}
+
+.score {
+    /* position: absolute; */
+    bottom: 0;
+    float: left;
+    margin-right: 10px;
+    font-size: 10px;
+    flex: none;
+}
+
+#icon {
+    margin-right: 5px;
+}
+.like {
+    margin-left: auto;
+    /* margin-right: 10px; */
+    font-size: 12px;
+    /* margin: 0 10px 0 0; */
+}
+
+.button-write {
+    position: fixed;
+    /* border: 3px solid rgb(150, 150, 150); */
+    /* margin-left: auto; */
+    border-radius: 3px;
+    bottom: 5%;
+    width: 12%;
+    height: 8%;
+    /* left: 0; */
+    font-size: 20px;
+    right: 4%;
+}
