@@ -1,0 +1,153 @@
+.question {
+    font-weight:bold;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.answers {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.answer {
+    border-radius: 100%;
+    background-color: white;
+    margin: 3%;
+    margin-top: 5%;
+}
+
+.fiv {
+    padding: 2.5%;
+    border: 1px solid green;
+}
+
+.fiv:hover {
+    background-color: green;
+}
+
+.fou {
+    padding: 2%;
+    border: 1px solid green;
+}
+
+.fou:hover {
+    background-color: green;
+}
+
+.thr {
+    padding: 1.5%;
+    border: 1px solid gray;
+}
+
+.thr:hover {
+    background-color: gray;
+}
+
+.two {
+    padding: 2%;
+    border: 1px solid purple;
+}
+
+.two:hover {
+    background-color: purple;
+}
+
+.one {
+    padding: 2.5%;
+    border: 1px solid purple;
+}
+
+.one:hover {
+    background-color: purple;
+}
+
+.result-text {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.result-photo {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.explana {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.like {
+    text-align: center;
+    font-size: 30px;
+}
+
+.dislike {
+    text-align: center;
+    font-size: 30px;
+}
+
+.info {
+    margin-top: 5%;
+    font-size: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #BBDED7;
+    background-color: #BBDED7;
+    box-shadow: 0px 3px 3px gray;
+    color: white;
+    padding: 10%;
+}
+
+.info:hover {
+    background-color: #51CDB4;
+    border: 1px solid #51CDB4;
+}
+
+.try {
+    margin-top: 5%;
+    font-size: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #BBDED7;
+    background-color: #BBDED7;
+    box-shadow: 0px 3px 3px gray;
+    color: white;
+    padding: 8%;
+}
+
+.try:hover {
+    background-color: #51CDB4;
+    border: 1px solid #51CDB4;
+}
+
+.agree {
+    color: green;
+}
+
+.disagree {
+    color: purple;
+}
+
+.left {
+    margin-top: 15%;
+    font-size:30px;
+    text-align: center;
+    color: white;
+}
+
+.name {
+    font-weight: bold;
+    color:rgb(229, 255, 168);
+}

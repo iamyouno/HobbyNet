@@ -1,0 +1,50 @@
+body {
+    background-color: #89C5D0;
+}
+
+.explanation {
+    text-align: center;
+    color: white;
+    font-weight:bold;
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+.button {
+    text-align: center;
+}
+
+#test_button {
+    margin-top: 5%;
+    font-size: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #BBDED7;
+    background-color: #BBDED7;
+    box-shadow: 0px 3px 3px gray;
+    color: white;
+    padding: 2%;
+}
+
+#test_button:hover {
+    background-color: #51CDB4;
+    border: 1px solid #51CDB4;
+}
+
+.rule_image {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.rule_explan {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
