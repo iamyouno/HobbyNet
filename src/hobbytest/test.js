@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import "./test.css"
 import questions from "./questions.js"
 import results from "./result.js"
+import home from "./pngs/home.png"
 
 function Test(){
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -22,6 +23,11 @@ function Test(){
 
     return(
         <div>
+            <div class = "home">
+                <Link to='/'>
+                    <img src={home} alt="home" width="3%" height="3%"/>
+                </Link>
+            </div>
             {showScore?(
                 <div class='result'>
                     <div class='result-text'>

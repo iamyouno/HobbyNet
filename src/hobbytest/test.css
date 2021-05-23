@@ -21,7 +21,7 @@
 
 .fiv {
     padding: 2.5%;
-    border: 1px solid green;
+    border: 3px solid green;
 }
 
 .fiv:hover {
@@ -30,7 +30,7 @@
 
 .fou {
     padding: 2%;
-    border: 1px solid green;
+    border: 3px solid green;
 }
 
 .fou:hover {
@@ -39,7 +39,7 @@
 
 .thr {
     padding: 1.5%;
-    border: 1px solid gray;
+    border: 3px solid gray;
 }
 
 .thr:hover {
@@ -48,7 +48,7 @@
 
 .two {
     padding: 2%;
-    border: 1px solid purple;
+    border: 3px solid purple;
 }
 
 .two:hover {
@@ -57,7 +57,7 @@
 
 .one {
     padding: 2.5%;
-    border: 1px solid purple;
+    border: 3px solid purple;
 }
 
 .one:hover {
@@ -65,7 +65,6 @@
 }
 
 .result-text {
-    margin-top: 5%;
     text-align: center;
     color: white;
     font-size: 50px;
@@ -133,15 +132,17 @@
 }
 
 .agree {
+    font-weight: bold;
     color: green;
 }
 
 .disagree {
+    font-weight: bold;
     color: purple;
 }
 
 .left {
-    margin-top: 15%;
+    margin-top: 10%;
     font-size:30px;
     text-align: center;
     color: white;

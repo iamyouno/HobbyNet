@@ -1,0 +1,32 @@
+.main {
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+    margin: 5%;
+}
+
+.main_buttons {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_button {
+    width: 25%;
+}
+
+.main_button img {
+    transition: transform .2s;
+}
+
+.main_button img:hover{
+    transform: scale(1.5);
+}
+
+.icon{
+    margin-top: 8%;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}

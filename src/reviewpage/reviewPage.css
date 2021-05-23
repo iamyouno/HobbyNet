@@ -152,3 +152,97 @@ input::-webkit-search-results-decoration { display: none; }
     font-size: 20px;
     right: 4%;
 }
+
+#titlewrite{
+    text-align:center;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    background-color:#8EBEC7;
+}
+.bigwrapper{
+    display:table;
+    margin-left:auto; 
+    margin-right:auto;
+    padding-left:100px;
+    padding-right:100px;
+    background-color:#DCF3F8;
+}
+.wrapper{
+    display:table-cell;
+    height:100%;
+    vertical-align: middle;
+}
+.full{display: inline-block;     
+}
+#hashtagbox{
+    resize: vertical;
+
+}
+.fullcirbtn{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(123, 182, 35);
+}
+.emptycirbtn{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.emptycirbtn:hover{
+    background-color: lightgrey;
+}
+
+.greyback{
+    background-color:gray ;
+}
+.container{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.items{
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid white;
+    color:white;
+    background-color: lightslategray;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer
+  }
+
+  .modal1 {
+    font-size: 12px;
+  }
+  .modal1 > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal1 > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal1 > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal1 > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
