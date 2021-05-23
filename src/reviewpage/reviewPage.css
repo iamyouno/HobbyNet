@@ -117,3 +117,90 @@ input::-webkit-search-results-decoration { display: none; }
     font-size: 20px;
     right: 4%;
 }
+
+h1{
+    text-align:center;
+}
+.bigwrapper{
+    display:table;
+    margin-left:auto; 
+    margin-right:auto;
+    background-color:lightblue;
+}
+.wrapper{
+    display:table-cell;
+    height:100%;
+    vertical-align: middle;
+}
+.full{display: inline-block;     
+}
+#hashtagbox{
+    resize: vertical;
+
+}
+.fullcirbtn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: greenyellow;
+}
+.emptycirbtn{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.emptycirbtn:hover{
+    background-color: lightgrey;
+}
+
+.greyback{
+    background-color:gray ;
+}
+.container{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.items{
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer
+  }
+
+  .modal {
+    font-size: 12px;
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
