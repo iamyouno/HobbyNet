@@ -294,7 +294,7 @@ function ReviewPage(){
               <tr>
     <td>Add categories:
       <label>
-          <ul className="container">
+          <ul className="container1">
             {(hastag.items).map((item, i) => 
               <li key={i} className="items" onClick={handleRemoveItem(i)}>
                 {item}
