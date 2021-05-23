@@ -9,6 +9,7 @@ import { faHeart as faHeartInactive, faEdit } from '@fortawesome/free-regular-sv
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ReactStars from "react-rating-stars-component";
+import delete_X from "./delete_X.png";
 
 function ReviewPage(){
     const [review, setReview] = useState({
@@ -30,9 +31,15 @@ function ReviewPage(){
         hashtag: ""
     })
 
+    // const [searchShow, setSearchShow] = useState({
+    //     html: "searched:&nbsp; &nbsp; &nbsp;{searchContent.hashtag}"
+    // })
+
     const [selAlign, setSelAlign] = useState({
         align: "date"
     })  
+
+    
 
     const [viewContent, setViewContent] = useState([{
         id: 1,
@@ -48,7 +55,7 @@ function ReviewPage(){
         like: 4, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["skateboard", "board", "friend"], date: "210524", active: -1
         },{
         id: 4,
-        content: "When I was in middle school, I was in the school band. I played the guitar after a long time and I remembered that time. But it takes too long. Also purchasing new guitar is too expensive. Most guitar academies also require a personal guitar.", 
+        content: "When I was in middle school, I was in the school band. I played the guitar after a long time and I remembered that time. But it takes too long. Also purchasing new guitar is too expensive.\n Most guitar academies also require a personal guitar.", 
         like: 12, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["guitar"], date: "210319", active: -1  
         },{
         id: 5,
@@ -60,7 +67,7 @@ function ReviewPage(){
         like: 3, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["guitar"], date: "210411", active: -1
     }])
 
-    const [dataContent, setDataContent] = useState([viewContent])
+    const [dataContent, setDataContent] = useState([...viewContent])
 
     const nextId = useRef(7);
 
@@ -68,6 +75,9 @@ function ReviewPage(){
         const {name, value} = e.target
         setSearch({
             hashtag: value
+        })
+        setValSearch({
+            val: value
         })
     }
 
@@ -77,6 +87,9 @@ function ReviewPage(){
         setSearchContent({
             hashtag: search.hashtag
         })
+        setValSearch({
+            val: ""
+        })
         // history.push('/reviewPage/'+search.hashtag)
     }
 
@@ -84,7 +97,8 @@ function ReviewPage(){
         console.log("hi")
         var newArr = []
         if (searchContent.hashtag == ""){
-            newArr = [...viewContent]
+            console.log(viewContent.length)
+            newArr = [...dataContent]
         }
         else{
             for (let i=0; i<viewContent.length; i++){
@@ -222,18 +236,46 @@ function ReviewPage(){
     setReview(newreview)
     }
 
+    const [searchShow, setSearchShow] = useState({
+        show: 0
+    })
+
+    const showDel = () => {
+        setSearchShow({
+            show: 1
+        })
+    }
+
+    const hideDel = () => {
+        setSearchShow({
+            show: 0
+        })
+    }
+
+    const endSearch = () => {
+        setSearchContent({
+            hashtag: ""
+        })
+    }
+
+    const [valSearch, setValSearch] = useState({
+        val: ""
+    })
+
     return(
         
         <div className="review-body">
             <div className="header">
                 <div className="title">Hobby Net</div>
-                <input type="search" className="search" placeholder="search" onChange={getValue}></input>
+                <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val}></input>
                 <div ><FontAwesomeIcon icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
             
             <div className="review-container">
                 <div className="review-header">
-                    <div className="search-hashtag">{searchContent.hashtag}   </div>
+                    <div className="search-hashtag" onMouseOver={showDel} onMouseLeave={hideDel}>searched:&nbsp;&nbsp;&nbsp;{searchContent.hashtag}&nbsp;&nbsp;&nbsp;
+                    { searchShow.show ? <FontAwesomeIcon icon={faTimes} onClick={endSearch}/> : <FontAwesomeIcon icon={faTimes} style={{visibility: 'hidden'}}/>}
+                    </div>
                     <select className="select" onChange={selectChange}>
                         <option value="date">Upload Date</option>
                         <option value="score">High Score</option>
