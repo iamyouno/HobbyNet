@@ -3,6 +3,8 @@ import './reviewPage.css';
 import ReviewWrite from './reviewWrite.js';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartActive } from '@fortawesome/free-solid-svg-icons';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as faHeartInactive } from '@fortawesome/free-regular-svg-icons';
 import { faEdit } from '@fortawesome/free-regular-svg-icons';
 import Popup from 'reactjs-popup';
@@ -191,7 +193,7 @@ const updatecomment = e=>{
             </div>
             <Popup trigger={<button className="button-write"><FontAwesomeIcon icon={faEdit} id="icon"/>write</button>} modal nested>
             {close => (
-      <div className="modal">
+      <div className="modal1">
         <button className="close" onClick={close}>
           &times;
         </button>
@@ -200,8 +202,8 @@ const updatecomment = e=>{
         <div className="bigwrapper"> 
       <div className = "wrapper">    
         <div className="full"> 
-        <h1>
-          HOBBY REVIEW
+        <h1 id="titlewrite">
+          <FontAwesomeIcon icon={faCircle} />  HOBBY REVIEW  <FontAwesomeIcon icon={faCircle} />
         </h1>
         <div>
           <table>
@@ -213,7 +215,7 @@ const updatecomment = e=>{
             {(hastag.items).map((item, i) => 
               <li key={i} className="items" onClick={handleRemoveItem(i)}>
                 {item}
-                <span>(x)</span>
+                <span>   <FontAwesomeIcon icon={faTimes}/>    </span>
               </li>
             )}
             <input

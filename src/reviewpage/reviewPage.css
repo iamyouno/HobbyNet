@@ -118,14 +118,19 @@ input::-webkit-search-results-decoration { display: none; }
     right: 4%;
 }
 
-h1{
+#titlewrite{
     text-align:center;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    background-color:#8EBEC7;
 }
 .bigwrapper{
     display:table;
     margin-left:auto; 
     margin-right:auto;
-    background-color:lightblue;
+    padding-left:100px;
+    padding-right:100px;
+    background-color:#DCF3F8;
 }
 .wrapper{
     display:table-cell;
@@ -139,14 +144,14 @@ h1{
 
 }
 .fullcirbtn{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: greenyellow;
+    background-color: rgb(123, 182, 35);
 }
 .emptycirbtn{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
 }
 .emptycirbtn:hover{
@@ -165,33 +170,35 @@ h1{
 .items{
     display: inline-block;
     padding: 2px;
-    border: 1px solid blue;
+    border: 1px solid white;
+    color:white;
+    background-color: lightslategray;
     border-radius: 5px;
     margin-right: 5px;
     cursor: pointer
   }
 
-  .modal {
+  .modal1 {
     font-size: 12px;
   }
-  .modal > .header {
+  .modal1 > .header {
     width: 100%;
     border-bottom: 1px solid gray;
     font-size: 18px;
     text-align: center;
     padding: 5px;
   }
-  .modal > .content {
+  .modal1 > .content {
     width: 100%;
     padding: 10px 5px;
   }
-  .modal > .actions {
+  .modal1 > .actions {
     width: 100%;
     padding: 10px 5px;
     margin: auto;
     text-align: center;
   }
-  .modal > .close {
+  .modal1 > .close {
     cursor: pointer;
     position: absolute;
     display: block;
