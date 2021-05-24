@@ -17,6 +17,7 @@
     background-color: white;
     margin: 3%;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .fiv {
@@ -105,6 +106,7 @@
     color: #5594C5;
     padding: 10%;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .info:hover {
@@ -126,6 +128,7 @@
     color: #5594C5;
     padding: 8%;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .try:hover {

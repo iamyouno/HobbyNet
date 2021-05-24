@@ -30,6 +30,7 @@ body {
     color: #5594C5;
     font-weight: bold;
     padding: 2%;
+    cursor: pointer;
 }
 
 #test_button:hover {
