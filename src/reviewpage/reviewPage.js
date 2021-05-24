@@ -94,16 +94,14 @@ function ReviewPage(){
     }
 
     useEffect(() => {
-        console.log("hi")
         var newArr = []
         if (searchContent.hashtag == ""){
-            console.log(viewContent.length)
             newArr = [...dataContent]
         }
         else{
-            for (let i=0; i<viewContent.length; i++){
-                if (viewContent[i].hashtag == searchContent.hashtag){
-                newArr.push(viewContent[i])
+            for (let i=0; i<dataContent.length; i++){
+                if (dataContent[i].hashtag == searchContent.hashtag){
+                newArr.push(dataContent[i])
                 }
             }
         }
@@ -174,7 +172,11 @@ function ReviewPage(){
     {day:'SUN',yes: false, time:[0,0,0,0] }])
 
     const Submit = (evt)=>{
-    console.log(review)
+        console.log(review)
+        var newArr = [...dataContent]
+        newArr.push(review)
+        setDataContent(newArr)
+        setViewContent(newArr)
     }
 
     const handleInputChange=(evt)=> {
@@ -262,12 +264,18 @@ function ReviewPage(){
         val: ""
     })
 
+    const onKeyPress = (e) => {
+        if (e.key=='Enter'){
+            goSearch()
+        }
+    }
+
     return(
         
         <div className="review-body">
             <div className="header">
                 <div className="title">Hobby Net</div>
-                <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val}></input>
+                <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val} onKeyPress={onKeyPress}></input>
                 <div ><FontAwesomeIcon icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
             
@@ -283,7 +291,7 @@ function ReviewPage(){
                     </select>
                 </div>
             
-                {viewContent.map( (element, index) => 
+                {viewContent.length == 0 ? <div className="noResult">no result</div> : viewContent.map( (element, index) => 
                     <div className="review-each">
                         <div className="date">{String(element.date).substring(0, 2)}/{String(element.date).substring(2, 4)}/{String(element.date).substring(4, 6)}</div>
                         <div className="review-content" >{element.content}</div>
