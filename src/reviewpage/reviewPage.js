@@ -330,20 +330,21 @@ function ReviewPage(){
         <button className="close" onClick={close}>
           &times;
         </button>
-        <div className="header"> Share your hobby experience </div>
-        <div className="content">
-        <div className="bigwrapper"> 
-      <div className = "wrapper">    
+        <div className="header11"> <FontAwesomeIcon icon={faCircle} className="facircle2" />  HOBBY REVIEW  <FontAwesomeIcon icon={faCircle} className="facircle2" /> </div>
+        <div className="content11">
+        <div className="bigwrapper11"> 
+      <div className = "wrapper11">    
         <div className="full"> 
-        <h1 id="titlewrite">
-          <FontAwesomeIcon icon={faCircle} />  HOBBY REVIEW  <FontAwesomeIcon icon={faCircle} />
-        </h1>
-        <div>
-          <table>
+
+    <table id ="first">
           <tbody>
-              <tr>
-    <td>Add categories:
+    <tr><td className="vert" id="vertical1">    <span><h2>
+        Add categories:</h2></span><div>
       <label>
+      <input className="cateinput"
+              value={hastag.input}
+              onChange={handleInputChange}
+              onKeyDown={handleInputKeyDown} />
           <ul className="container1">
             {(hastag.items).map((item, i) => 
               <li key={i} className="items" onClick={handleRemoveItem(i)}>
@@ -351,26 +352,21 @@ function ReviewPage(){
                 <span>   <FontAwesomeIcon icon={faTimes}/>    </span>
               </li>
             )}
-            <input
-              value={hastag.input}
-              onChange={handleInputChange}
-              onKeyDown={handleInputKeyDown} />
+           
           </ul>
         </label>
+      </div>
       </td>
-    </tr><tr>
-              <td>Comments:<textarea id="hashtagbox" onInput={updatecomment} cols="40" rows="3" charswidth="30" ></textarea></td>
+              <td id="vertical2"><h2>Comments:</h2><textarea id="hashtagbox" width ="100%" onInput={updatecomment} ></textarea></td>
               </tr>
-              </tbody>
-              </table>
-        </div>
- 
+
+    <tr><td className="vert">
         <div id="starbox">
-            <table>
+            <table id="startable">
               <tbody>
               <tr>
-                  <td>Total</td>
-                  <td>
+                  <td className="starhd"><h2>Total</h2></td>
+                  <td className="stars">
     <ReactStars
       count={5}
       onChange={ratingChanged(0)}
@@ -384,8 +380,8 @@ function ReviewPage(){
             </td>
               </tr>
               <tr>
-                  <td>Interest</td>
-                  <td>    <ReactStars
+                  <td className="starhd"><h2>Interest</h2></td>
+                  <td className="stars">    <ReactStars
       count={5}
       onChange={ratingChanged(1)}
       size={24}
@@ -397,8 +393,8 @@ function ReviewPage(){
     /></td>
               </tr>
               <tr>
-                  <td>Schedule</td>
-                  <td><ReactStars
+                  <td className="starhd"><h2>Schedule</h2></td>
+                  <td className="stars"><ReactStars
       count={5}
       onChange={ratingChanged(2)}
       size={24}
@@ -412,31 +408,36 @@ function ReviewPage(){
               </tbody>
             </table>
         </div>
-        <div id ="hashtag box">
+        </td><td>
+            <h2 >Time Schedule for the hobby:</h2>
+        <div id ="timebox">
             <table> 
               <tbody>
             {Dayday.map( (element, index) => <tr>
-            <td>{element.day}</td>
-            <td><button type="button" onClick={updateClick(index)} className={element.yes?"emptycirbtn":"fullcirbtn"}></button></td>
-            <td>No</td> 
-            <td><button onClick={updateClick(index)} className={element.yes ? "fullcirbtn":"emptycirbtn"}></button></td>
-            <td>Yes</td>  
-            <td>from  <input type ="number" onInput={updateTime(index,0)} id="hour" min={0} max={24} step={1} className={element.yes?"happy":"greyback"}/> :  
+            <td><h3>{element.day}</h3></td>
+            <td><h3><button type="button" onClick={updateClick(index)} className={element.yes?"emptycirbtn":"fullcirbtn"}>NO</button></h3></td>
+            <td><h3><button onClick={updateClick(index)} className={element.yes ? "fullcirbtn":"emptycirbtn"}>YES</button></h3></td>
+            <td><h3>from  <input type ="number" onInput={updateTime(index,0)} min={0} max={24} step={1} className={element.yes?"happy":"greyback"}/> :  
             <input type ="number" onInput={updateTime(index,1)} min={0} max={50} step={10}  className={element.yes?"happy":"greyback"} /> 
              to  <input type ="number" onInput={updateTime(index,2)} min={0} max={24} step={1}  className={element.yes?"happy":"greyback"}/> : 
              <input type ="number" onInput={updateTime(index,3)} min={0} max={50} step={10}  className={element.yes?"happy":"greyback"}/>                
-             </td>
+             </h3></td>
                 </tr>)}
                 </tbody>
             </table>
         </div>
+        </td>
+        </tr>
+        </tbody>
+              </table>
       </div>
       </div>
       </div>
         </div>
         <div className="actions">
         <button
-            className="button"
+            className="button22"
+            id="cancel"
             onClick={() => {
                 setReview({
                     content: '',
@@ -462,7 +463,8 @@ function ReviewPage(){
             close
           </button>
           <button
-            className="button"
+            className="button22"
+            id ="accept"
             onClick={() =>{
               Submit()
               console.log('Accept');
