@@ -17,7 +17,6 @@ function App() {
             <Route exact path='/reviewPage'><ReviewPage/></Route>
             <Route path='/reviewPage/:hashtag'><ReviewSearch></ReviewSearch></Route>
         </Router>
-
     );
 }
 
