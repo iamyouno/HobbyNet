@@ -83,12 +83,12 @@
     color: white;
 }
 
-.like {
+.result_like {
     text-align: center;
     font-size: 30px;
 }
 
-.dislike {
+.result_dislike {
     text-align: center;
     font-size: 30px;
 }

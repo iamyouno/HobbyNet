@@ -37,11 +37,13 @@ function Test(){
                         <img src={results[parseInt(score/5)].photo} alt = "photo" width="20%" height="20%"/>
                     </div>
                     <div class='explana'>
-                        <span class="like">
+                        <span class="result_like">
                             I like it!
-                            <button class='info'>See review</button>
+                            <Link to='/reviewPage'>
+                                <button class='info'>See review</button>
+                            </Link>
                         </span>
-                        <span class="dislike">
+                        <span class="result_dislike">
                             I don't like it...
                             <Link to='/hobbytest'>
                                 <button class='try'>Try again</button>
