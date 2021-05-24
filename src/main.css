@@ -10,6 +10,7 @@
     margin-top: 10%;
     display: flex;
     justify-content: center;
+    height: 30vh;
 }
 
 .main_button {
@@ -24,8 +25,20 @@
     transform: scale(1.5);
 }
 
-.icon{
-    margin-top: 8%;
+.main_button img:hover + .icon_text .brief {
+    display: none;
+}
+
+.main_button img:hover + .icon_text .detail {
+    visibility: visible;
+}
+
+.icon_text .detail {
+    visibility: hidden;
+}
+
+.icon_text{
+    margin-top: 10%;
     font-weight: bold;
     font-size: x-large;
     color: black;

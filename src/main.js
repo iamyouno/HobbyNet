@@ -12,25 +12,28 @@ function main(){
             <div class = "main_buttons">
                 <div class = "main_button test">
                     <Link to ='/hobbytest' style={{textDecoration: 'none'}}>
-                        <img src={test} alt="test" height="25%" class = "image"/>
-                        <div class = "icon">
-                            <div class = "icon_text">Hobby test</div>
+                        <img src={test} alt="test" height="60%" class = "image"/>
+                        <div class = "icon_text">
+                            <div class = "brief">Hobby Test</div>
+                            <div class = "detail">Get a hobby recommendation by a simple hobby test!</div>
                         </div>
                     </Link>
                 </div>
                 <div class = "main_button review">
                     <Link to ='/reviewPage' style={{textDecoration: 'none'}}>
-                        <img src={review} alt="test" height="25%" class = "image"/>
-                        <div class = "icon">
-                            <div class = "icon_text">Review</div>
+                        <img src={review} alt="test" height="60%" class = "image"/>
+                        <div class = "icon_text">
+                            <div class = "brief">Review</div>
+                            <div class = "detail">See other’s realistic reviews!</div>
                         </div>
                     </Link>
                 </div>
                 <div class = "main_button schedule">
                     <Link to ='/schedule' style={{textDecoration: 'none'}}>
-                        <img src={timetable} alt="test" height="25%" class = "image"/>
-                        <div class = "icon">
-                            <div class = "icon_text">Timetable</div>
+                        <img src={timetable} alt="test" height="60%" class = "image"/>
+                        <div class = "icon_text">
+                            <div class = "brief">Timetable</div>
+                            <div class = "detail">Find what hobbies are available when you want!</div>
                         </div>
                     </Link>
                 </div>
