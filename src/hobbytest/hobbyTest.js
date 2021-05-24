@@ -25,7 +25,7 @@ function hobbyTest(){
             </div>
             <div class = "rule">
                 <div class = "rule_image">
-                    <span class = "time">
+                    <span class = "timer">
                         <img src={timer} alt="timer" width="150px" height="150px"/>
                     </span>
                     <span class = "honest">
@@ -33,11 +33,11 @@ function hobbyTest(){
                     </span>
                 </div>
                 <div class = "rule_explan">
-                    <span class = "time">
+                    <span class = "timer">
                         It takes about 1-2 minutes
                     </span>
                     <span class = "honest">
-                        Modifying your choice is not allowed, so please choose carefully!
+                        Modifying your choice is not allowed!
                     </span>
                 </div>
             </div>
