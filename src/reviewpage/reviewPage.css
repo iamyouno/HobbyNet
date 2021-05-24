@@ -3,7 +3,7 @@
 } */
 
 .review-body {
-    background-color: #d1d1d1;
+    background-color: #EAEFF4;
     /* min-height: 100vh; */
 }
 
@@ -19,22 +19,24 @@
     /* position: relative;
     bottom: 0;
     left: 0; */
-    margin-top: 3%;
+    bottom: 0;
+    margin-top: auto;
     width:20%;
     margin-left: 22%;
     float: left;
     font-size: 50px;
+    color: navy;
     
 }
 
 .search {
-    /* position: relative;
-    bottom: 0;
+    position: relative;
+    /* bottom: 0;
     left: 35%; */
     margin-top: 5%;
-    margin-left: 12%;
+    margin-left: 10%;
     margin-right: 10%;
-    width: 30%;
+    width: 28%;
     /* height: 50vh;  */
     font-size: 20px; 
     color: rgb(150, 150, 150);
@@ -51,11 +53,13 @@
 }
 
 .search-icon {
-    /* position: relative;
-    bottom: 50%;
-    left: 74%; */
+    position: absolute;
+    /* top:0;
+    left:0; */
+    bottom: 0;
+    right: 22%;
+    /* margin-top: 90%; */
     margin-bottom: 13px;
-    margin-right: 10px;
     font-size:20px;
 }
 
@@ -67,13 +71,14 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
 .review-container {
-    padding: 0  10% 5% 10%;
+    padding: 1.5% 10% 5% 10%;
     /* padding-top: 2%; */
 }
 
 .review-header {
     display: flex;
-    align-items: center
+    align-items: center;
+    margin-bottom: 1%;
 }
 
 .search-hashtag{
@@ -81,7 +86,7 @@ input::-webkit-search-results-decoration { display: none; }
     border: 1px solid rgb(180, 180, 180);
     border-radius: 50px;
     background-color: rgb(180, 180, 180);
-    padding: 9px 20px 5px 15px;
+    padding: 7px 20px 5px 15px;
     /* padding-left: auto;
     padding-right: auto; */
     font-weight: 300;
@@ -91,7 +96,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 .select {
     margin-left: auto;
-    margin-right: 20%;
+    margin-right: 22%;
     /* margin-bottom: 10px; */
     font-family: 'Ubuntu', sans-serif;
     border-radius: 3px;
@@ -147,7 +152,7 @@ input::-webkit-search-results-decoration { display: none; }
     float: left;
     margin-right: 10px;
     margin-top: auto;
-    font-size: 10px;
+    font-size: 12px;
     /* flex: none; */
 }
 

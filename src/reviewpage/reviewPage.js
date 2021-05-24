@@ -39,12 +39,10 @@ function ReviewPage(){
         align: "date"
     })  
 
-    
-
     const [viewContent, setViewContent] = useState([{
         id: 1,
-        content: "It was a very special experience for me, but my weekend is gone", 
-        like: 2, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["surfing", "extreme"], date: "210525", active: -1
+        content: "It was a very special experience for me, but my weekend is gone. One day for traveling, and one day for rest", 
+        like: 2, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["travel", "hiking"], date: "210525", active: -1
         },{
         id: 2,
         content: 'It was really fun :)', 
@@ -59,12 +57,12 @@ function ReviewPage(){
         like: 12, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["guitar"], date: "210319", active: -1  
         },{
         id: 5,
-        content: "hahahahahahahahahahahahahahaha\nhahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha", 
-        like: 3, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["guitar"], date: "210411", active: -1
+        content: "This cooking academy is so good to me. Our teacher was famous chef!!", 
+        like: 3, total: 4.0, interest: 4.0, schedule: 4.0, hashtag: ["cooking"], date: "210417", active: -1
         },{
         id: 6,
-        content: "hahahahahahahahahahahahahahaha\nhahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha", 
-        like: 3, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["guitar"], date: "210411", active: -1
+        content: "KAIST LIBRARY IS SO WONDERFUL", 
+        like: 3, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["reading"], date: "210411", active: -1
     }])
 
     const [dataContent, setDataContent] = useState([...viewContent])
@@ -81,27 +79,29 @@ function ReviewPage(){
         })
     }
 
-    const history = useHistory()
-
     const goSearch = () => {
         setSearchContent({
             hashtag: search.hashtag
         })
-        setValSearch({
-            val: ""
-        })
-        // history.push('/reviewPage/'+search.hashtag)
+        // setValSearch({
+        //     val: ""
+        // })
+        console.log(searchContent.hashtag)
     }
 
     useEffect(() => {
         var newArr = []
+        console.log(searchContent.hashtag)
         if (searchContent.hashtag == ""){
             newArr = [...dataContent]
         }
         else{
-            for (let i=0; i<dataContent.length; i++){
-                if (dataContent[i].hashtag == searchContent.hashtag){
-                newArr.push(dataContent[i])
+            console.log("oojojo")
+            for (var i=0; i<dataContent.length; i++){
+                for (var j=0; j<dataContent[i].hashtag.length; j++)
+                if (dataContent[i].hashtag[j] == searchContent.hashtag){
+                    console.log("hi")
+                    newArr.push(dataContent[i])
                 }
             }
         }
@@ -129,7 +129,6 @@ function ReviewPage(){
             align: e.target.value
         })
         
-        
         var list = [...viewContent]
         if (e.target.value == "date"){
             list.sort(function(a, b){
@@ -148,7 +147,6 @@ function ReviewPage(){
         }
         
         setViewContent(list)
-        
     }
 
     var pointlist=[0,0,0];
@@ -258,6 +256,9 @@ function ReviewPage(){
         setSearchContent({
             hashtag: ""
         })
+        setValSearch({
+            val:""
+        })
     }
 
     const [valSearch, setValSearch] = useState({
@@ -274,7 +275,7 @@ function ReviewPage(){
         
         <div className="review-body">
             <div className="header">
-                <div className="title">Hobby Net</div>
+                <div className="title"><Link to ='/' style={{textDecoration:'none', color:'inherit'}}>HobbyNet</Link></div>
                 <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val} onKeyPress={onKeyPress}></input>
                 <div ><FontAwesomeIcon icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
@@ -285,9 +286,9 @@ function ReviewPage(){
                     { searchShow.show ? <FontAwesomeIcon icon={faTimes} onClick={endSearch}/> : <FontAwesomeIcon icon={faTimes} style={{visibility: 'hidden'}}/>}
                     </div>
                     <select className="select" onChange={selectChange}>
-                        <option value="date">Upload Date</option>
+                        <option value="date">Recent Date</option>
                         <option value="score">High Score</option>
-                        <option value="hearts">Hearts</option>
+                        <option value="hearts">Likes</option>
                     </select>
                 </div>
             
