@@ -16,21 +16,30 @@
 .recommend__hobby{
     width:20%;
     margin-left: 5%;
-    border-style: groove;
-    margin-top: 11%;
+    border: solid 1.5px black;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
+    background-color: #EAEFF4;
+    margin-bottom: 50px;
 
 }
 .findhobbybutton{
 
     height:10%;
     margin: 35px;
+    color: #5594C5;
+    background-color: white;
     font-size: 20px;
     border-radius: 5px;
-    background-color: #BBDED7;
+    border: 1px solid black;
     align-items: center;
-    
+}
+.findhobbybutton:hover{
+    background-color: #5594C5;
+    border: 1px solid #5594C5;
+    color: white;
+    cursor :pointer;
 }
 .hobbyname{
     margin-left: 5%;
@@ -45,6 +54,9 @@
     width: 90%;
     height:30px;
     border-radius: 5px;
+}
+.seereview:hover{
+    cursor: pointer;
 }
 .seereview2{
     align-items: center;
@@ -62,13 +74,16 @@
 .hobbybutton{
     background-color: lightyellow;
 }
+
 .hobbyinfo{
+    padding-top: 5%;
     margin-top: 30px;
     border-radius: 5px;
     border:solid 1px black;
     align-content: space-around;
     background-color: lightgray;
 }
+
 .shownList{
     margin:35px;
 
@@ -90,7 +105,7 @@ body{
 
 .container{
     height: 10%;
-    width: 60%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +132,7 @@ h1,h3{
     
     /* background-color: brown; */
     padding: 20px;
-    border-style :groove;
+    border: solid 1px gray;
     
 }
 .timetext{
@@ -153,15 +168,19 @@ h1,h3{
 .task__container .task__name{
     padding: 10px;
     margin: 0 10px;
+    width : 12%;
+    height: 5%;
+    text-align: center;
     border-radius: 5px;
     cursor: pointer;
 }
 .task__name3{
     padding: 10px;
     margin: 0 10px;
+    width : 12%;
+    height: 5%;
     border-radius: 5px;
     cursor: pointer;
-    border:solid 1px black
 }
 
 
@@ -177,11 +196,13 @@ h1,h3{
 
 /* SCHEDULE DESIGN */
 .schedule__container{
-    border-style :groove;
-    background-color: #ebf4f5;
+    
+    border:solid 1px gray;
+    background-color: #EAEFF4;
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-bottom: 50px;
 }
 
 .days__container{
@@ -189,21 +210,23 @@ h1,h3{
 }
 
 .corner{
-    width: 95px;
+    width: 105px;
     height: 70px;
     margin: 2px;
+    margin-right: 8px;
 }
 
 .day{
     width: 100px;
     border: solid 1px white;
-    color: black;
-    background-color: #A4D6DB;
+    color: white;
+    background-color: #5594C5;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2px;
-    font-size: 20px;
+    font-size: 25px;
+    height: 60px;
 }
 
 .part__day{
@@ -211,15 +234,17 @@ h1,h3{
 }
 
 .time{
-    width: 95px;
+    width: 105px;
     height: 50px;
-    color:black;
-    background-color: #A4D6DB;
+    color: white;
+    background-color: #5594C5;
+    
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2px;
+    margin-right: 8px;
 }
 
 .task{
@@ -237,14 +262,16 @@ h1,h3{
 
 /* Reset Button */
 .deleteBtn{
-    padding: 10px 25px;
-    margin-left : 30px;
+    margin-left : 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 40%;
     border: none;
     background-color: white;
-    border: solid 2px black;
+    border: solid 1px black;
     border-radius: 5px;
     cursor: pointer;
-    text-transform: uppercase;
+    
     outline: none;
 }
 

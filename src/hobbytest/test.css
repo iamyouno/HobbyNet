@@ -3,7 +3,7 @@
     margin-top: 10%;
     text-align: center;
     font-size: 50px;
-    color: white;
+    color: black;
 }
 
 .answers {
@@ -17,6 +17,7 @@
     background-color: white;
     margin: 3%;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .fiv {
@@ -66,21 +67,20 @@
 
 .result-text {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 50px;
+    font-weight: bold;
 }
 
 .result-photo {
     margin-top: 5%;
     text-align: center;
-    color: white;
-    font-size: 50px;
 }
 
 .explana {
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color: black;
 }
 
 .result_like {
@@ -100,16 +100,19 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    border: 1px solid #BBDED7;
-    background-color: #BBDED7;
+    border: 1px solid white;
+    background-color: white;
     box-shadow: 0px 3px 3px gray;
-    color: white;
+    color: #5594C5;
     padding: 10%;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .info:hover {
-    background-color: #51CDB4;
-    border: 1px solid #51CDB4;
+    background-color: #5594C5;
+    border: 1px solid #5594C5;
+    color: white;
 }
 
 .try {
@@ -119,16 +122,19 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    border: 1px solid #BBDED7;
-    background-color: #BBDED7;
+    border: 1px solid white;
+    background-color: white;
     box-shadow: 0px 3px 3px gray;
-    color: white;
+    color: #5594C5;
     padding: 8%;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .try:hover {
-    background-color: #51CDB4;
-    border: 1px solid #51CDB4;
+    background-color: #5594C5;
+    border: 1px solid #5594C5;
+    color: white;
 }
 
 .agree {
@@ -145,10 +151,10 @@
     margin-top: 10%;
     font-size:30px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .name {
     font-weight: bold;
-    color:rgb(229, 255, 168);
+    color: #0072c9;
 }
