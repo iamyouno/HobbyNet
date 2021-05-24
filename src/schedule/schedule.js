@@ -3,6 +3,8 @@ import home from './Homeicon.png';
 import './schedule.css';
 import { Link } from 'react-router-dom';
 import Modal from './Modal';
+import Modal2 from './Modal2';
+import timedist from './Timedist.png'
 
 
 
@@ -15,6 +17,16 @@ function Schedule(){
     }
     const closeModal = () => {
         setModalOpen(false);
+    }
+
+    const [ modalOpen2, setModalOpen2 ] = useState(false);
+
+
+    const openModal2 = () => {
+        setModalOpen2(true);
+    }
+    const closeModal2 = () => {
+        setModalOpen2(false);
     }
 
     const taskRef1 = useRef(false);
@@ -127,6 +139,7 @@ function Schedule(){
 
     const showHobbylist = () => {
         setShowList(true);
+        closeModal();
     }
     useEffect(()=>{
         
@@ -139,7 +152,9 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 4.7 / 5.0 </span></h4>
                 <p/><br/>
-                <Link to = './reviewPage'><button className="seereview">See review</button><p/></Link>
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
+                <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
             </div>
             <div className ="hobbyinfo">
@@ -148,7 +163,9 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 4.3 / 5.0 </span></h4>
                 <p/><br/>
-                <Link to = './reviewPage'><button className="seereview">See review</button><p/></Link>
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
+                <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
             </div>
             <div className ="hobbyinfo">
@@ -157,13 +174,11 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 3.5 / 5.0 </span></h4>
                 <p/><br/>
-                <Link to = './reviewPage'><button className="seereview">See review</button><p/></Link>
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
+                <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
             </div>
-            
-
-
-
             </div>
         : <div></div>
     return(
@@ -261,7 +276,7 @@ function Schedule(){
                 <div ref={taskRef3} className="task__name" id="sleep" onClick={selectTask} style={{backgroundColor: "#f7f779"}}>Sleep</div>
                 <div ref={taskRef4} className="task__name" id="gym" onClick={selectTask} style={{backgroundColor: "#2a9d8f"}}>Gym</div>
                 <div ref={taskRef5} className="task__name" id="any" onClick={selectTask} style={{backgroundColor: "#bdb2ff"}}>Any</div>
-                <div ref={taskRef6} className="task__name3" id="delete" onClick={selectTask} style={{backgroundColor: "white"}}>Erase</div>
+                <div ref={taskRef6} className="task__name" id="delete" onClick={selectTask} style={{backgroundColor: "white"}}>Erase</div>
                 
                 <button className="deleteBtn" onClick={openPopup}>Reset Schedule</button>
 
