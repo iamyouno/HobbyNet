@@ -156,6 +156,14 @@ h1,h3{
     border-radius: 5px;
     cursor: pointer;
 }
+.task__name3{
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:solid 1px black
+}
+
 
 .task__name.selected{
     box-shadow:0px 0px 0px 2px black inset;

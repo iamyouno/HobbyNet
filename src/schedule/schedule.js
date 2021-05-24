@@ -1,5 +1,4 @@
 import React, {useRef, useState, useEffect} from 'react';
-import timedist from './timedist.png';
 import home from './Homeicon.png';
 import './schedule.css';
 import { Link } from 'react-router-dom';
@@ -24,7 +23,6 @@ function Schedule(){
     const taskRef4 = useRef(false);
     const taskRef5 = useRef(false);
     const taskRef6 = useRef(false);
-    const taskRef7 = useRef(false);
     const taskRef9 = useRef(null);
     const taskRef10 = useRef(null);
     
@@ -61,7 +59,7 @@ function Schedule(){
                 activeTask(taskRef5,taskColor);
                 //icon = '<i class="fas fa-users"></i>';
                 break
-            case 'work':
+            case 'delete':
                 activeTask(taskRef6,taskColor);
                // icon = '<i class="fas fa-briefcase"></i>';
                 break
@@ -91,12 +89,7 @@ function Schedule(){
         if(e.target.classList.contains('task') && active === true){
            //e.target.innerHTML = icon;
            e.target.style.backgroundColor = selectedColor;
-        //}else if(taskRef8.current.classList.contains('fas') && active === true){
-         
-        
         }
-           // e.target.parentElement.innerHTML = icon;
-        //}
     };
 
     // Reset tasks (2)
@@ -136,7 +129,7 @@ function Schedule(){
         setShowList(true);
     }
     useEffect(()=>{
-        console.log(showList);
+        
     },[showList])
     const renderCondition = showList
         ? <div className = "shownList">
@@ -146,7 +139,7 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 4.7 / 5.0 </span></h4>
                 <p/><br/>
-                <button className="seereview">See review</button><p/>
+                <Link to = './reviewPage'><button className="seereview">See review</button><p/></Link>
 
             </div>
             <div className ="hobbyinfo">
@@ -155,7 +148,7 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 4.3 / 5.0 </span></h4>
                 <p/><br/>
-                <button className="seereview">See review</button><p/>
+                <Link to = './reviewPage'><button className="seereview">See review</button><p/></Link>
 
             </div>
             <div className ="hobbyinfo">
@@ -164,7 +157,7 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 3.5 / 5.0 </span></h4>
                 <p/><br/>
-                <button className="seereview">See review</button><p/>
+                <Link to = './reviewPage'><button className="seereview">See review</button><p/></Link>
 
             </div>
             
@@ -268,6 +261,7 @@ function Schedule(){
                 <div ref={taskRef3} className="task__name" id="sleep" onClick={selectTask} style={{backgroundColor: "#f7f779"}}>Sleep</div>
                 <div ref={taskRef4} className="task__name" id="gym" onClick={selectTask} style={{backgroundColor: "#2a9d8f"}}>Gym</div>
                 <div ref={taskRef5} className="task__name" id="any" onClick={selectTask} style={{backgroundColor: "#bdb2ff"}}>Any</div>
+                <div ref={taskRef6} className="task__name3" id="delete" onClick={selectTask} style={{backgroundColor: "white"}}>Erase</div>
                 
                 <button className="deleteBtn" onClick={openPopup}>Reset Schedule</button>
 
