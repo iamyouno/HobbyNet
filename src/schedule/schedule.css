@@ -98,6 +98,7 @@
     margin: auto;
     width:40px;
     height: 20px;
+    cursor: pointer;
     
 }
 
@@ -121,7 +122,6 @@ body{
     width:200px;
     padding-bottom: 5px;
    
-    
 }
 
 h1,h3{
@@ -140,6 +140,7 @@ h1,h3{
 .timetext{
     margin: 9px;
     
+    
 }
 .memoinput{
     margin-top: 10px;
@@ -147,9 +148,8 @@ h1,h3{
     height: 100px;
 }
 .startmes{
-    margin: 10px;
+    margin-left: 25px;
     
-    margin-bottom: 10px;
     display: flex;
 }
 a{
@@ -295,12 +295,12 @@ a{
     top: 0;
     left: 0;
     z-index: 99;
-    height: 100%;
+    height: 300%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .pop-up{
@@ -309,6 +309,7 @@ a{
     display: flex;
     flex-direction: column;
     
+    margin-top: 30%;
     align-items: center;
     background-color: #E2F1F3;
     padding: 15px;

@@ -149,10 +149,11 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 4.7 / 5.0 </span></h4>
                 <p/><br/>
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                
             </div>
             <div className ="hobbyinfo">
                 <h2><span className="hobbyname">Cooking</span></h2><br/>
@@ -160,10 +161,11 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 4.3 / 5.0 </span></h4>
                 <p/><br/>
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                
             </div>
             <div className ="hobbyinfo">
                 <h2><span className="hobbyname">Game</span></h2><br/>
@@ -171,10 +173,10 @@ function Schedule(){
                 <br/>
                 <h4><span className="infoname">Rating : 3.5 / 5.0 </span></h4>
                 <p/><br/>
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
-
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+               
             </div>
             </div>
         : <div></div>
