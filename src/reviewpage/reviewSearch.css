@@ -1,0 +1,172 @@
+.bigwrapper{
+    display:table;
+    margin-left:auto; 
+    margin-right:auto;
+    padding-left:100px;
+    padding-right:100px;
+    background-color:#DCF3F8;
+}
+.wrapper{
+    display:table-cell;
+    height:100%;
+}
+.full{
+    padding:15px;    
+}
+#hashtagbox{
+    width:100%;
+    height:100px;
+    resize: vertical;
+
+
+}
+
+#timebox{
+    padding-top:10px
+}
+.fullcirbtn{
+    width: 35px;
+    height: 25px;
+    border-radius: 15%;
+    background-color: rgb(54, 146, 189);
+    color:white;
+    margin-right:2px
+}
+.emptycirbtn{
+    width: 35px;
+    height: 25px;
+    border-radius: 15%;
+    margin-right:2px
+}
+.emptycirbtn:hover{
+    background-color: lightgrey;
+}
+
+.greyback{
+    background-color:gray ;
+    width:45px;
+    font-size:20;
+    margin-left:2px;
+    margin-right:2px;    
+}
+.happy{
+    font-weight: bold;
+    width:45px;
+    font-size:20;
+    margin-left: 2px;
+    margin-right:2px;    
+}
+.container1{
+    border: 1px solid #ddd;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px
+}
+
+.items{
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid white;
+    color:white;
+    background-color: lightslategray;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer
+  }
+
+  .modal1 {
+    font-size: 12px;
+  }
+  .modal1 > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal1 > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal1 > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal1 > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+  .header11{
+      background-color: #7fb8f1;
+      font-size: 28px;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      text-align: center;
+      color: navy;
+      text-shadow: 1px 1px 1px gray;
+  }
+  .facircle2{
+      font-size:20px;
+      color: rgb(63, 63, 124);
+      font-weight: bolder;
+ }
+ .content11{
+    background-color: #EAEFF4
+ }
+ #catecell{
+    width: 45px;
+ }
+
+ .cateinput {
+    width:100%;
+    height:25px;
+    font-size:15px;
+    margin :2px
+  }
+  #first{
+      width: 100%;
+      table-layout: fixed;
+      border-spacing: 20px;
+
+  }
+
+  .vert{
+      width: 35%;
+      vertical-align: top;
+  }
+
+  #vertical1{
+    vertical-align: top;
+  }
+  #vertical2{
+      vertical-align:top;
+  }
+
+  .starhd{
+      vertical-align: bottom;
+  }
+
+.button22{
+    width: 20%;
+    height: 20%;
+    margin-left:10%;
+    margin-right:10%;
+    border-radius: 5px;
+}
+#accept{
+    background-color: #7fb8f1;
+    color:white
+
+}

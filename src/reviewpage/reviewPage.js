@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, BrowserRouter as Router, useHistory } from 'react-router-dom';
 import './reviewPage.css';
 import './search-bar.css';
+import './reviewSearch.css';
 import ReviewWrite from './reviewWrite.js';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeartActive, faSearch, faCircle, faTimes } from '@fortawesome/free-solid-svg-icons';

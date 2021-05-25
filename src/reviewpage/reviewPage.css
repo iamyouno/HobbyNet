@@ -196,7 +196,7 @@ input::-webkit-search-results-decoration { display: none; }
     -webkit-justify-content:center;
 }
 
-.bigwrapper{
+/* .bigwrapper{
     display:table;
     margin-left:auto; 
     margin-right:auto;
@@ -350,7 +350,7 @@ input::-webkit-search-results-decoration { display: none; }
 
   /*td {
     border: 1px solid #333333;
-  }*/
+  }
   .starhd{
       vertical-align: bottom;
   }
@@ -366,4 +366,4 @@ input::-webkit-search-results-decoration { display: none; }
     background-color: #7fb8f1;
     color:white
 
-}
+} */
