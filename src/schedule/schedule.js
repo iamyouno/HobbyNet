@@ -96,10 +96,7 @@ function Schedule(){
     
     // Set colors for schedule (4)
     const setColors =(e)=>{
-
-        //alert(ref.current.classList)
         if(e.target.classList.contains('task') && active === true){
-           //e.target.innerHTML = icon;
            e.target.style.backgroundColor = selectedColor;
         }
     };
@@ -199,17 +196,17 @@ function Schedule(){
              <button onClick={openModal} className="findhobbybutton"> <h2>Find Hobby</h2> </button>
              <Modal open={modalOpen} close={closeModal} show={showHobbylist} header="Input Your Freetime" >
              <table>
-                 <tr><td className='요일선택'>MON</td><td className='요일선택'>TUE</td><td className='요일선택'>WED</td><td className='요일선택'>THU</td><td className='요일선택'>FRI</td><td className='요일선택'>SAT</td><td className='요일선택'>SUN</td></tr>
+                 <h3><tr><td className='요일선택'>Mon</td><td className='요일선택'>Tue</td><td className='요일선택'>Wed</td><td className='요일선택'>Thu</td><td className='요일선택'>Fri</td><td className='요일선택'>Sat</td><td className='요일선택'>Sun</td></tr>
                  <tr>
                      <td className='요일선택'><input className='daycheck' type='checkbox'/></td> <td className='요일선택'><input className='daycheck' type='checkbox'/></td> <td className='요일선택'><input className='daycheck' type='checkbox'/></td> <td className='요일선택'><input className='daycheck' type='checkbox'/></td> <td className='요일선택'><input className='daycheck' type='checkbox'/></td> <td className='요일선택'><input className='daycheck' type='checkbox'/></td> <td className='요일선택'><input className='daycheck' type='checkbox'/></td>  </tr>
-                 </table>
+                     </h3></table>
                  <p></p><br></br>
                  <hr className="line"></hr><br></br>
                  
-                 <span className="timetext">Time</span>
+                 <h3><span className="timetext">Time</span></h3>
                  <p></p><br></br>
                  
-                 <span className="startmes">Start :
+                 <h3><span className="startmes">Start :
                  <select className="selectbox_start">
 
                     <option>08:00</option>
@@ -249,7 +246,7 @@ function Schedule(){
                     <option>23:00</option>
                     <option>24:00</option>
                  </select>
-                 </span> <br></br>
+                 </span> </h3><br></br>
                  <p></p>
 
                  </Modal>
@@ -339,6 +336,16 @@ function Schedule(){
                 </div>  
                 <div className="part__day" onClick={setColors}>
                     <span className="time">11am - 12pm</span>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                    <div className="task"></div>
+                </div>  
+                <div className="part__day" onClick={setColors}>
+                    <span className="time">12pm - 1pm</span>
                     <div className="task"></div>
                     <div className="task"></div>
                     <div className="task"></div>
