@@ -185,8 +185,8 @@ function Schedule(){
         
         <div>
             <div className="home">
-                <Link to ='/'>
-                    <img src={home} alt="home" width="3%" height="3%" />
+                <Link to ='/' >
+                    <div className="main33">HobbyNet</div>
                 </Link>
 
             </div>
