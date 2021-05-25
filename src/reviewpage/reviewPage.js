@@ -310,19 +310,14 @@ function ReviewPage(){
     }
 
     const cateInput = useRef();
-
     const handleCateEnter=(evt)=> {
+        if ( cateInput.current.value != "" ) {
+            console.log("wow")
         const {value} = cateInput.current;
         
         let newreview = review;
         newreview.hashtag = [...hastag.items,value]
-
-        let today = new Date()
-        let year = today.getFullYear(); // 년도
-        let month = today.getMonth() + 1;  // 월
-        let todayDate = today.getDate();  // 날짜
-        let showDate = year%100 + "0" +month+todayDate
-        newreview.hashtag = showDate
+        console.log(newreview)
 
         setReview(newreview)
     
@@ -330,7 +325,7 @@ function ReviewPage(){
             items: [...hastag.items, value],
         });
         cateInput.current.value="";
-    }
+    }}
 
     return(
         
