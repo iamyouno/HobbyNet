@@ -309,6 +309,29 @@ function ReviewPage(){
         }
     }
 
+    const cateInput = useRef();
+
+    const handleCateEnter=(evt)=> {
+        const {value} = cateInput.current;
+        
+        let newreview = review;
+        newreview.hashtag = [...hastag.items,value]
+
+        let today = new Date()
+        let year = today.getFullYear(); // 년도
+        let month = today.getMonth() + 1;  // 월
+        let todayDate = today.getDate();  // 날짜
+        let showDate = year%100 + "0" +month+todayDate
+        newreview.hashtag = showDate
+
+        setReview(newreview)
+    
+        setss({
+            items: [...hastag.items, value],
+        });
+        cateInput.current.value="";
+    }
+
     return(
         
         <div className="review-body">
@@ -366,7 +389,27 @@ function ReviewPage(){
             <Popup trigger={<button className="button-write"><FontAwesomeIcon icon={faEdit} id="icon"/>write</button>} modal nested>
             {close => (
       <div className="modal1">
-        <button className="close" onClick={close}>
+        <button className="close" onClick={() => {
+                setReview({
+                    content: '',
+                    like: 0,
+                    total: parseFloat(0),
+                    interest: 0,
+                    schedule: 0,
+                    hashtag: [],
+                    date: "0",
+                    active: -1
+                })
+                setdayday([{ day:"MON", yes: false, time:[0,0,0,0]},{day:'TUE',yes: false, time:[0,0,0,0] },
+  {day:"WED", yes: false,time:[0,0,0,0] },{day:'THU',yes: false, time:[0,0,0,0] },{day:'FRI', yes: false,time:[0,0,0,0] },{day:'SAT', yes: false,time:[0,0,0,0] },
+  {day:'SUN',yes: false, time:[0,0,0,0] }])
+                setss({
+                    items: [],
+                    focused: false,
+                    })
+              console.log('Cancel');
+              close();
+            }}>
           &times;
         </button>
         <div className="header11"> <FontAwesomeIcon icon={faCircle} className="facircle2" />  HOBBY REVIEW  <FontAwesomeIcon icon={faCircle} className="facircle2" /> </div>
@@ -381,10 +424,11 @@ function ReviewPage(){
         Add categories:</h2></span><div>
       <label>
       <input className="cateinput"
+                placeholder=" type here"
               value={hastag.input}
               onChange={handleInputChange}
-              onKeyDown={handleInputKeyDown} />
-          <ul className="container1">
+              onKeyDown={handleInputKeyDown}  ref={cateInput} /><button id="cateenter" onClick={handleCateEnter}>Enter</button>
+          <ul className="container1" >
             {(hastag.items).map((item, i) => 
               <li key={i} className="items" onClick={handleRemoveItem(i)}>
                 {item}
@@ -396,7 +440,7 @@ function ReviewPage(){
         </label>
       </div>
       </td>
-              <td id="vertical2"><h2>Comments:</h2><textarea id="hashtagbox" width ="100%" onInput={updatecomment} ></textarea></td>
+              <td id="vertical2"><h2>Comments:<textarea id="hashtagbox" placeholder=" write your comments for the hobby" width ="100%" onInput={updatecomment} ></textarea></h2></td>
               </tr>
 
     <tr><td className="vert">
@@ -456,9 +500,9 @@ function ReviewPage(){
             <td><h3>{element.day}</h3></td>
             <td><h3><button type="button" onClick={updateClick(index)} className={element.yes?"emptycirbtn":"fullcirbtn"}>NO</button></h3></td>
             <td><h3><button onClick={updateClick(index)} className={element.yes ? "fullcirbtn":"emptycirbtn"}>YES</button></h3></td>
-            <td><h3>from  <input type ="number" onInput={updateTime(index,0)} min={0} max={24} step={1} className={element.yes?"happy":"greyback"}/> :  
+            <td><h3>  from  <input type ="number" onInput={updateTime(index,0)} min={0} max={24} step={1} className={element.yes?"happy":"greyback"}/> :  
             <input type ="number" onInput={updateTime(index,1)} min={0} max={50} step={10}  className={element.yes?"happy":"greyback"} /> 
-             to  <input type ="number" onInput={updateTime(index,2)} min={0} max={24} step={1}  className={element.yes?"happy":"greyback"}/> : 
+              to  <input type ="number" onInput={updateTime(index,2)} min={0} max={24} step={1}  className={element.yes?"happy":"greyback"}/> : 
              <input type ="number" onInput={updateTime(index,3)} min={0} max={50} step={10}  className={element.yes?"happy":"greyback"}/>                
              </h3></td>
                 </tr>)}
