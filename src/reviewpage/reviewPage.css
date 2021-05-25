@@ -71,7 +71,7 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
 .review-container {
-    padding: 1.5% 10% 5% 10%;
+    padding: 3% 10% 5% 10%;
     /* padding-top: 2%; */
 }
 
@@ -183,17 +183,23 @@ input::-webkit-search-results-decoration { display: none; }
     color: red;
 }
 
+.noResCon {
+    display: flex;
+}
+
 .noResult{
-    position:absolute;
-    top:0;right:0;bottom:0;left:0;
+    /* position:absolute; */
+    margin: auto;
+    padding-top: 10%;
+    /* top:0;right:0;bottom:0;left:0; */
     font-size: 20px;
-    display:flex;
+    /* display:flex; */
     align-items:center;
-    justify-content:center;
+    /* justify-content:center;
   
     display:-webkit-flex;
     -webkit-align-item: center;
-    -webkit-justify-content:center;
+    -webkit-justify-content:center; */
 }
 
 /* .bigwrapper{

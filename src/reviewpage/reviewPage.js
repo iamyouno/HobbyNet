@@ -43,19 +43,19 @@ function ReviewPage(){
     const [viewContent, setViewContent] = useState([{
         id: 1,
         content: "It was a very special experience for me, but my weekend is gone. One day for traveling, and one day for rest", 
-        like: 2, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["travel", "hiking"], date: "210525", active: -1
+        like: 2, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["travel", "hiking"], date: "210523", active: -1
         },{
         id: 2,
         content: 'It was really fun :)', 
-        like: 3, total: 4.5, interest: 5.0, schedule: 4.0, hashtag: ["guitar"], date: "210525", active: -1
+        like: 3, total: 4.5, interest: 5.0, schedule: 4.0, hashtag: ["cooking"], date: "210524", active: -1
         },{
         id: 3,
         content: "Someone who rides a skateboard with me~", 
-        like: 4, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["skateboard", "board", "friend"], date: "210524", active: -1
+        like: 4, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["skateboard", "board", "friend"], date: "210523", active: -1
         },{
         id: 4,
         content: "When I was in middle school, I was in the school band. I played the guitar after a long time and I remembered that time. But it takes too long. Also purchasing new guitar is too expensive.\n Most guitar academies also require a personal guitar.", 
-        like: 12, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["guitar"], date: "210319", active: -1  
+        like: 7, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["guitar", "music"], date: "210319", active: -1  
         },{
         id: 5,
         content: "This cooking academy is so good to me. Our teacher was famous chef!!", 
@@ -84,30 +84,34 @@ function ReviewPage(){
         setSearchContent({
             hashtag: search.hashtag
         })
-        // setValSearch({
-        //     val: ""
-        // })
-        console.log(searchContent.hashtag)
+        console.log("goSearch")
+        initSelectChange()
+        
     }
 
     useEffect(() => {
         var newArr = []
-        console.log(searchContent.hashtag)
         if (searchContent.hashtag == ""){
             newArr = [...dataContent]
         }
         else{
-            console.log("oojojo")
             for (var i=0; i<dataContent.length; i++){
                 for (var j=0; j<dataContent[i].hashtag.length; j++)
                 if (dataContent[i].hashtag[j] == searchContent.hashtag){
-                    console.log("hi")
                     newArr.push(dataContent[i])
                 }
             }
         }
         setViewContent(newArr)
     }, [searchContent])
+
+    useEffect(() =>{
+        initSelectChange()
+    }, [])
+    
+    useEffect(() => {
+        initSelectChange()
+    }, [dataContent])
 
     const addLike = index => e => {
         var newArr = [...viewContent]
@@ -124,29 +128,39 @@ function ReviewPage(){
     }
 
     const selectChange = (e) => {
-
         console.log(e.target.value)
         setSelAlign({
             align: e.target.value
         })
-        
+    }
+
+    useEffect( () => {
         var list = [...viewContent]
-        if (e.target.value == "date"){
+        if (selAlign.align == "date"){
             list.sort(function(a, b){
                 return b.date-a.date
             })
         }
-        else if (e.target.value == "score"){
+        else if (selAlign.align == "score"){
             list.sort(function(a, b){
                 return b.total-a.total
             })
         }
-        else if (e.target.value == "hearts"){
+        else if (selAlign.align == "hearts"){
             list.sort( function(a, b) {
                 return b.like-a.like
             })
         }
         
+        setViewContent(list)
+        console.log("hii")
+    }, [selAlign])
+        
+    const initSelectChange = () => {
+        var list = [...viewContent]
+        list.sort(function(a, b){
+            return b.date-a.date
+        })
         setViewContent(list)
     }
 
@@ -171,9 +185,22 @@ function ReviewPage(){
     {day:'SUN',yes: false, time:[0,0,0,0] }])
 
     const Submit = (evt)=>{
-        console.log(review)
+        
+        let today = new Date()
+        let year = today.getFullYear(); // 년도
+        let month = today.getMonth() + 1;  // 월
+        let todayDate = today.getDate();  // 날짜
+        let showDate = year%100 + "0" +month+todayDate
+        // console.log(showDate)
+        // setReview({
+        //     ...review,
+        //     [review.date]: showDate,
+        // })
+        // console.log(review.date)
+        let newRev = {...review}
         var newArr = [...dataContent]
-        newArr.push(review)
+
+        newArr.push(newRev)
         setDataContent(newArr)
         setViewContent(newArr)
     }
@@ -190,6 +217,13 @@ function ReviewPage(){
     
     let newreview = review;
     newreview.hashtag = [...hastag.items,value]
+    
+    let today = new Date()
+    let year = today.getFullYear(); // 년도
+    let month = today.getMonth() + 1;  // 월
+    let todayDate = today.getDate();  // 날짜
+    let showDate = year%100 + "0" +month+todayDate
+    newreview.date = showDate
     setReview(newreview)
 
     setss({
@@ -257,6 +291,9 @@ function ReviewPage(){
         setSearchContent({
             hashtag: ""
         })
+        setSearch({
+            hashtag: ""
+        })
         setValSearch({
             val:""
         })
@@ -276,7 +313,7 @@ function ReviewPage(){
         
         <div className="review-body">
             <div className="header">
-                <div className="title"><Link to ='/' style={{textDecoration:'none', color:'inherit'}}>HobbyNet</Link></div>
+                <div className="title"><Link to ='/' style={{textDecoration:'none', color:'inherit', fontWeight:'bold'}}>HobbyNet</Link></div>
                 <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val} onKeyPress={onKeyPress}></input>
                 <div ><FontAwesomeIcon icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
@@ -293,7 +330,7 @@ function ReviewPage(){
                     </select>
                 </div>
             
-                {viewContent.length == 0 ? <div className="noResult">no result</div> : viewContent.map( (element, index) => 
+                {viewContent.length == 0 ? <div className="noResCon"><div className="noResult">no result</div></div> : viewContent.map( (element, index) => 
                     <div className="review-each">
                         <div className="date">{String(element.date).substring(0, 2)}/{String(element.date).substring(2, 4)}/{String(element.date).substring(4, 6)}</div>
                         <div className="review-content" >{element.content}</div>
