@@ -335,15 +335,15 @@ function ReviewPage(){
             <div className="header">
                 <div className="title"><Link to ='/hobbynet' style={{textDecoration:'none', color:'inherit', fontWeight:'bold'}}>HobbyNet</Link></div>
                 <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val} onKeyPress={onKeyPress}></input>
-                <div ><FontAwesomeIcon icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
+                <div ><FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
             
             <div className="review-container">
                 <div className="review-header">
                     <div className="search-hashtag" onMouseOver={showDel} onMouseLeave={hideDel}>searched:&nbsp;&nbsp;&nbsp;{searchContent.hashtag}&nbsp;&nbsp;&nbsp;
-                    { searchShow.show ? <FontAwesomeIcon icon={faTimes} onClick={endSearch}/> : <FontAwesomeIcon icon={faTimes} style={{visibility: 'hidden'}}/>}
+                    { searchShow.show ? <FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faTimes} onClick={endSearch}/> : <FontAwesomeIcon icon={faTimes} style={{visibility: 'hidden'}}/>}
                     </div>
-                    <select className="select" onChange={selectChange}>
+                    <select style = {{cursor: 'pointer'}} className="select" onChange={selectChange}>
                         <option value="date">Recent Date</option>
                         <option value="score">High Score</option>
                         <option value="hearts">Likes</option>
@@ -372,9 +372,9 @@ function ReviewPage(){
                             
                             {element.active == -1 ? 
                                 
-                                    <div className="like"><FontAwesomeIcon icon={faHeartInactive} id="icon" onClick={addLike(index)}/>{element.like}</div>:
+                                    <div className="like"><FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faHeartInactive} id="icon" onClick={addLike(index)}/>{element.like}</div>:
                                     
-                                    <div className="like"><FontAwesomeIcon icon={faHeartActive} id="icon" onClick={delLike(index)} style={{color: "#f60000"}}/>{element.like}</div>
+                                    <div className="like"><FontAwesomeIcon icon={faHeartActive} id="icon" onClick={delLike(index)} style={{color: "#f60000", cursor: 'pointer'}}/>{element.like}</div>
                                                     
                             }
                         </div>
@@ -424,7 +424,7 @@ function ReviewPage(){
                 placeholder=" type here"
               value={hastag.input}
               onChange={handleInputChange}
-              onKeyDown={handleInputKeyDown}  ref={cateInput} /><button id="cateenter" onClick={handleCateEnter}>Enter</button>
+              onKeyDown={handleInputKeyDown}  ref={cateInput} /><button style = {{cursor: 'pointer'}} id="cateenter" onClick={handleCateEnter}>Enter</button>
           <ul className="container1" >
             {(hastag.items).map((item, i) => 
               <li key={i} className="items" onClick={handleRemoveItem(i)}>
@@ -516,6 +516,7 @@ function ReviewPage(){
         </div>
         <div className="actions">
         <button
+            style = {{cursor: 'pointer'}}
             className="button22"
             id="cancel"
             onClick={() => {
@@ -543,6 +544,7 @@ function ReviewPage(){
             close
           </button>
           <button
+            style = {{cursor: 'pointer'}}
             className="button22"
             id ="accept"
             onClick={() =>{
