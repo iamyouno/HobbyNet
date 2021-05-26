@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/HobbyNet/static/css/main.e3bb43fc.chunk.css",
+    "main.js": "/HobbyNet/static/js/main.b685b252.chunk.js",
+    "main.js.map": "/HobbyNet/static/js/main.b685b252.chunk.js.map",
+    "runtime-main.js": "/HobbyNet/static/js/runtime-main.ec96f2da.js",
+    "runtime-main.js.map": "/HobbyNet/static/js/runtime-main.ec96f2da.js.map",
+    "static/css/2.23154d62.chunk.css": "/HobbyNet/static/css/2.23154d62.chunk.css",
+    "static/js/2.97081826.chunk.js": "/HobbyNet/static/js/2.97081826.chunk.js",
+    "static/js/2.97081826.chunk.js.map": "/HobbyNet/static/js/2.97081826.chunk.js.map",
+    "index.html": "/HobbyNet/index.html",
+    "static/css/2.23154d62.chunk.css.map": "/HobbyNet/static/css/2.23154d62.chunk.css.map",
+    "static/css/main.e3bb43fc.chunk.css.map": "/HobbyNet/static/css/main.e3bb43fc.chunk.css.map",
+    "static/js/2.97081826.chunk.js.LICENSE.txt": "/HobbyNet/static/js/2.97081826.chunk.js.LICENSE.txt",
+    "static/media/Timedist.66ae5da0.png": "/HobbyNet/static/media/Timedist.66ae5da0.png",
+    "static/media/ban.85e41a9e.png": "/HobbyNet/static/media/ban.85e41a9e.png",
+    "static/media/book.1f9650ab.png": "/HobbyNet/static/media/book.1f9650ab.png",
+    "static/media/chronometer.025b779d.png": "/HobbyNet/static/media/chronometer.025b779d.png",
+    "static/media/crayons.e3898f9a.png": "/HobbyNet/static/media/crayons.e3898f9a.png",
+    "static/media/delete_X.5a0d6375.png": "/HobbyNet/static/media/delete_X.5a0d6375.png",
+    "static/media/gaming.7fd32a0e.png": "/HobbyNet/static/media/gaming.7fd32a0e.png",
+    "static/media/headphones.6f044b87.png": "/HobbyNet/static/media/headphones.6f044b87.png",
+    "static/media/hiking.9ad13ce0.png": "/HobbyNet/static/media/hiking.9ad13ce0.png",
+    "static/media/popcorn.57a1848e.png": "/HobbyNet/static/media/popcorn.57a1848e.png",
+    "static/media/search.976ed039.png": "/HobbyNet/static/media/search.976ed039.png",
+    "static/media/soup.8db6710b.png": "/HobbyNet/static/media/soup.8db6710b.png",
+    "static/media/test.d4cb59a4.png": "/HobbyNet/static/media/test.d4cb59a4.png",
+    "static/media/treadmill.c166452f.png": "/HobbyNet/static/media/treadmill.c166452f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec96f2da.js",
+    "static/css/2.23154d62.chunk.css",
+    "static/js/2.97081826.chunk.js",
+    "static/css/main.e3bb43fc.chunk.css",
+    "static/js/main.b685b252.chunk.js"
+  ]
+}
