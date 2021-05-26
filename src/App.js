@@ -10,12 +10,11 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 function App() {
     return (
         <Router>
-            <Route exact path='/'><Main/></Route>
-            <Route path='/hobbyTest'><HobbyTest/></Route>
-            <Route path='/test'><Test/></Route>
-            <Route path='/schedule'><Schedule/></Route>
-            <Route exact path='/reviewPage'><ReviewPage/></Route>
-            <Route path='/reviewPage/:hashtag'><ReviewSearch></ReviewSearch></Route>
+            <Route exact path='/hobbynet'><Main/></Route>
+            <Route path='/hobbynet/hobbyTest'><HobbyTest/></Route>
+            <Route path='/hobbynet/test'><Test/></Route>
+            <Route path='/hobbynet/schedule'><Schedule/></Route>
+            <Route path='/hobbynet/reviewPage'><ReviewPage/></Route>
         </Router>
     );
 }
