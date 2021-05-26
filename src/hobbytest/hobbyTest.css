@@ -42,7 +42,7 @@ body {
 .rule_image {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-top: 10%;
+    margin-top: 7%;
     text-align: center;
 }
 
