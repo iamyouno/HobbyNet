@@ -11,7 +11,7 @@ function main(){
             HobbyNet
             <div class = "main_buttons">
                 <div class = "main_button test">
-                    <Link to ='/hobbytest' style={{textDecoration: 'none'}}>
+                    <Link to ='/hobbynet/hobbytest' style={{textDecoration: 'none'}}>
                         <img src={test} alt="test" height="60%" class = "image"/>
                         <div class = "icon_text">
                             <div class = "brief">Hobby Test</div>
@@ -20,7 +20,7 @@ function main(){
                     </Link>
                 </div>
                 <div class = "main_button review">
-                    <Link to ='/reviewPage' style={{textDecoration: 'none'}}>
+                    <Link to ='/hobbynet/reviewPage' style={{textDecoration: 'none'}}>
                         <img src={review} alt="test" height="60%" class = "image"/>
                         <div class = "icon_text">
                             <div class = "brief">Review</div>
@@ -29,7 +29,7 @@ function main(){
                     </Link>
                 </div>
                 <div class = "main_button schedule">
-                    <Link to ='/schedule' style={{textDecoration: 'none'}}>
+                    <Link to ='/hobbynet/schedule' style={{textDecoration: 'none'}}>
                         <img src={timetable} alt="test" height="60%" class = "image"/>
                         <div class = "icon_text">
                             <div class = "brief">Timetable</div>
