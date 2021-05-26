@@ -548,9 +548,12 @@ function ReviewPage(){
             className="button22"
             id ="accept"
             onClick={() =>{
+                if (review.hashtag.length!=0){
+                    console.log(review.hashtag)
               Submit()
               console.log('Accept');
-              close();
+              close();}
+              else{alert("Add category!")}
             }}
           >
             Accept
