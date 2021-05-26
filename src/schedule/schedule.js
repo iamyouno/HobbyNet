@@ -152,7 +152,7 @@ function Schedule(){
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 
             </div>
             <div className ="hobbyinfo">
@@ -164,7 +164,7 @@ function Schedule(){
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 
             </div>
             <div className ="hobbyinfo">
@@ -175,7 +175,7 @@ function Schedule(){
                 <p/><br/>
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                
             </div>
             </div>
@@ -184,7 +184,7 @@ function Schedule(){
         
         <div>
             <div className="home">
-                <Link to ='/' >
+                <Link to ='/hobbynet' >
                     <div className="main33">HobbyNet</div>
                 </Link>
 

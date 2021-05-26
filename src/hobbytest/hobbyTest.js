@@ -9,7 +9,7 @@ function hobbyTest(){
     return(
         <div class = "test_main">
             <div class = "home">
-                <Link to='/'>
+                <Link to='/hobbynet'>
                     <img src={home} alt="home" width="3%" height="3%"/>
                 </Link>
             </div>
@@ -19,7 +19,7 @@ function hobbyTest(){
                 get a hobby that is "exactly" your taste!
             </div>
             <div class = "button">
-                <Link to='/test'>
+                <Link to='/hobbynet/test'>
                     <button id = "test_button">Click to test</button>
                 </Link>
             </div>

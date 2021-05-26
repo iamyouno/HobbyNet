@@ -333,7 +333,7 @@ function ReviewPage(){
         
         <div className="review-body">
             <div className="header">
-                <div className="title"><Link to ='/' style={{textDecoration:'none', color:'inherit', fontWeight:'bold'}}>HobbyNet</Link></div>
+                <div className="title"><Link to ='/hobbynet' style={{textDecoration:'none', color:'inherit', fontWeight:'bold'}}>HobbyNet</Link></div>
                 <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val} onKeyPress={onKeyPress}></input>
                 <div ><FontAwesomeIcon icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
