@@ -2,8 +2,8 @@ import React, {useRef, useState, useEffect} from 'react';
 import home from './Homeicon.png';
 import './schedule.css';
 import { Link } from 'react-router-dom';
-import Modal from './Modal';
-import Modal2 from './Modal2';
+import Modal from './Modal.js';
+import Modal2 from './Modal2.js';
 import timedist from './Timedist.png'
 
 
