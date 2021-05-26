@@ -10,7 +10,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 function App() {
     return (
         <Router>
-            <Route exact path='/hobbynet'><Main/></Route>
+            <Route exact path='/'><Main/></Route>
             <Route path='/hobbyTest'><HobbyTest/></Route>
             <Route path='/test'><Test/></Route>
             <Route path='/schedule'><Schedule/></Route>
