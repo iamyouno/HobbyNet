@@ -185,12 +185,14 @@ function ReviewPage(){
     {day:'SUN',yes: false, time:[0,0,0,0] }])
 
     const Submit = (evt)=>{
-        
+        let newreview=review;
         let today = new Date()
         let year = today.getFullYear(); // 년도
         let month = today.getMonth() + 1;  // 월
         let todayDate = today.getDate();  // 날짜
         let showDate = year%100 + "0" +month+todayDate
+        newreview.date = showDate
+        setReview(newreview)
         // console.log(showDate)
         // setReview({
         //     ...review,
@@ -214,24 +216,24 @@ function ReviewPage(){
     const handleInputKeyDown=(evt)=> {
     if ( evt.keyCode === 13 ) {
     const {value} = evt.target;
-    
+    if(value!=""){
     let newreview = review;
     newreview.hashtag = [...hastag.items,value]
     
-    let today = new Date()
+/*    let today = new Date()
     let year = today.getFullYear(); // 년도
     let month = today.getMonth() + 1;  // 월
     let todayDate = today.getDate();  // 날짜
     let showDate = year%100 + "0" +month+todayDate
     newreview.date = showDate
     setReview(newreview)
-
+*/
     setss({
         items: [...hastag.items, value],
     });
     evt.target.value="";
 
-    }
+    }}
     /*
     if ( hastag.items.length && evt.keyCode === 8 && !hastag.input.length ) {
     setss(hastag => ({
