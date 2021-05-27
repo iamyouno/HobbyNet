@@ -44,13 +44,13 @@ by CS374, team Passionista
 
 ### 2.3. Hobby timetable
 
-- 요
+-  You can add your fixed schedule from the above tag container on the timetable. 
 
-- !
+-  You can erase or reset your timetable.
 
-- !
+-  You can find hobby based on your fixed schedule. 
 
-- !
+-  Others' time distributions and reviews are provided.
 
 ## 3. Description of codes
 
@@ -92,12 +92,12 @@ by CS374, team Passionista
 
 <pre><code>/src/schedule/schedule.js</code></pre>
 
-- It is a modal layout for Find hobby button.
+- Main page for treating user's timetable.
 
 <pre><code>/src/schedule/Modal.js</code></pre>
 
-- It is a modal layout for See Time distribution button.
+- It is a modal layout for Find hobby button.
 
 <pre><code>/src/schedule/Modal2.js</code></pre>
 
-- 파이팅!
+- It is a modal layout for See Time distribution button.
