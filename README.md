@@ -92,15 +92,11 @@ by CS374, team Passionista
 
 <pre><code>/src/schedule/schedule.js</code></pre>
 
-- 됩니다
-
-<pre><code>/src/schedule/Showing.js</code></pre>
-
-- 그럼
+- It is a modal layout for Find hobby button.
 
 <pre><code>/src/schedule/Modal.js</code></pre>
 
-- 다들
+- It is a modal layout for See Time distribution button.
 
 <pre><code>/src/schedule/Modal2.js</code></pre>
 
