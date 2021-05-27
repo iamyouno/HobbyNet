@@ -42,6 +42,8 @@ by CS374, team Passionista
 
 - After looking aroud, leave your own hobby review:)
 
+- you can leave comments and your schedule, rate points for the chosen categories. 
+
 ### 2.3. Hobby timetable
 
 -  You can add your fixed schedule from the above tag container on the timetable. 
