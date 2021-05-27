@@ -14,7 +14,7 @@ by CS374, team Passionista
 
 - This is website for people who can't enjoy their hobby life because of their **fixed-routine**
 
-## 2. Description
+## 2. Description of main features
 
 - We have 3 main features, **hobby test**, **review system**, and **hobby timetable**
 
