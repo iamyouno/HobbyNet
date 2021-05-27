@@ -2,7 +2,7 @@
 
 We hope happy hobby life :)
 
-- URL: https://https://iamyouno.github.io/hobbynet/ (Optimized in desktop size)
+- URL: https://iamyouno.github.io/hobbynet/ (Optimized in desktop size)
 
 - Git Repo: https://github.com/iamyouno/hobbynet
 
