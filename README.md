@@ -60,7 +60,7 @@ by CS374, team Passionista
 
 <pre><code>/src/index.js</code></pre>
 
-- 
+- 모르겠어 이부분
 
 <pre><code>/src/main.js</code></pre>
 
