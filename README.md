@@ -88,10 +88,6 @@ by CS374, team Passionista
 
 - It is a page for each review, and we will add a comment function or a photo attachment function in the future. (In this project, we do not use)
 
-<pre><code>/src/reviewpage/reviewWrite.js</code></pre>
-
-- 넣으면
-
 <pre><code>/src/schedule/schedule.js</code></pre>
 
 - Main page for treating user's timetable.
