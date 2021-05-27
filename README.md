@@ -34,13 +34,13 @@ by CS374, team Passionista
 
 ### 2.2. Review system
 
-- 채
+- You can look around reviews that other users have already written.
 
-- 워
+- If you like some review, you can give "like" to click heart icon.
 
-- 주
+- You can use search bar or select box to find specific reviews.
 
-- 세
+- After looking aroud, leave your own hobby review:)
 
 ### 2.3. Hobby timetable
 
@@ -60,7 +60,7 @@ by CS374, team Passionista
 
 <pre><code>/src/index.js</code></pre>
 
-- 모르겠어 이부분
+- base js file for react, It has <App/> by component.
 
 <pre><code>/src/main.js</code></pre>
 
@@ -80,11 +80,11 @@ by CS374, team Passionista
 
 <pre><code>/src/reviewpage/reviewPage.js</code></pre>
 
-- 여기
+- Bulletin board type page, to see and search reviews.
 
 <pre><code>/src/reviewpage/reviewSearch.js</code></pre>
 
-- 채워
+- It is a page for each review, and we will add a comment function or a photo attachment function in the future. (In this project, we do not use)
 
 <pre><code>/src/reviewpage/reviewWrite.js</code></pre>
 
