@@ -184,6 +184,9 @@ function ReviewPage(){
     {day:"WED", yes: false,time:[0,0,0,0] },{day:'THU',yes: false, time:[0,0,0,0] },{day:'FRI', yes: false,time:[0,0,0,0] },{day:'SAT', yes: false,time:[0,0,0,0] },
     {day:'SUN',yes: false, time:[0,0,0,0] }])
 
+    const hours=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+    const mins=[0,10,20,30,40,50];
+
     const Submit = (evt)=>{
         let newreview=review;
         let today = new Date()
@@ -493,14 +496,16 @@ function ReviewPage(){
         <div id ="timebox">
             <table> 
               <tbody>
+                
+
             {Dayday.map( (element, index) => <tr>
             <td><h3>{element.day}</h3></td>
             <td><h3><button type="button" onClick={updateClick(index)} className={element.yes?"emptycirbtn":"fullcirbtn"}>NO</button></h3></td>
             <td><h3><button onClick={updateClick(index)} className={element.yes ? "fullcirbtn":"emptycirbtn"}>YES</button></h3></td>
-            <td><h3>  from  <input type ="number" onInput={updateTime(index,0)} min={0} max={24} step={1} className={element.yes?"happy":"greyback"}/> :  
-            <input type ="number" onInput={updateTime(index,1)} min={0} max={50} step={10}  className={element.yes?"happy":"greyback"} /> 
-              to  <input type ="number" onInput={updateTime(index,2)} min={0} max={24} step={1}  className={element.yes?"happy":"greyback"}/> : 
-             <input type ="number" onInput={updateTime(index,3)} min={0} max={50} step={10}  className={element.yes?"happy":"greyback"}/>                
+            <td><h3>  from  <select onInput={updateTime(index,0)} className={element.yes?"happy":"greyback"} disabled={!element.yes}><option disabled selected value> -- </option>{hours.map((ele,index)=><option>{ele}</option>)}</select> :  
+            <select onInput={updateTime(index,0)} className={element.yes?"happy":"greyback"} disabled={!element.yes}><option disabled selected value> -- </option>{mins.map((ele,index)=><option>{ele}</option>)}</select>
+              to  <select onInput={updateTime(index,0)} className={element.yes?"happy":"greyback"} disabled={!element.yes}><option disabled selected value> -- </option>{hours.map((ele,index)=><option>{ele}</option>)}</select> : 
+              <select onInput={updateTime(index,0)} className={element.yes?"happy":"greyback"} disabled={!element.yes}><option disabled selected value> -- </option>{mins.map((ele,index)=><option>{ele}</option>)}</select>                
              </h3></td>
                 </tr>)}
                 </tbody>
