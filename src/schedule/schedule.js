@@ -2,8 +2,8 @@ import React, {useRef, useState, useEffect} from 'react';
 import home from './Homeicon.png';
 import './schedule.css';
 import { Link } from 'react-router-dom';
-import Modal from './Modal.js';
-import Modal2 from './Modal2.js';
+import Modal from './Modal';
+import Modal2 from './Modal2';
 import timedist from './Timedist.png'
 
 
@@ -152,7 +152,7 @@ function Schedule(){
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
-                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 
             </div>
             <div className ="hobbyinfo">
@@ -164,7 +164,7 @@ function Schedule(){
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
-                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 
             </div>
             <div className ="hobbyinfo">
@@ -175,7 +175,7 @@ function Schedule(){
                 <p/><br/>
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
-                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                
             </div>
             </div>
@@ -184,7 +184,7 @@ function Schedule(){
         
         <div>
             <div className="home">
-                <Link to ='/hobbynet' >
+                <Link to ='/' >
                     <div className="main33">HobbyNet</div>
                 </Link>
 
@@ -264,9 +264,10 @@ function Schedule(){
 
 
             <div className="container">
-                
+                <div className ="fixed__container">
 
-            <h1>Select a fixed schedule</h1>
+ 
+            <h1><center>Select a fixed schedule</center></h1>
             
             <div className="task__container">
 
@@ -290,9 +291,10 @@ function Schedule(){
                 </div>
 
             </div>
+            </div>
             <br/>
 
-            <h3>Add your fixed scheule on the table</h3>
+            <h3 style={{fontSize:"30px"}}>Add your fixed scheule on the table</h3>
             <div className="little__container">
 
             <div className="schedule__container">

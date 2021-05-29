@@ -11,6 +11,15 @@
     
    
 }
+.fixed__container{
+    position: fixed;
+    top : 3%;
+    
+    
+}
+.announce{
+    font-weight: 30px;
+}
 .little__container{
     display: flex;
 }
