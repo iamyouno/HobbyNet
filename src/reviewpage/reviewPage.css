@@ -177,6 +177,7 @@ input::-webkit-search-results-decoration { display: none; }
     /* left: 0; */
     font-size: 20px;
     right: 4%;
+    cursor : pointer;
 }
 
 .hashDelButton {
