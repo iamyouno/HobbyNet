@@ -8,11 +8,21 @@ import home from "./pngs/home.png"
 function Test(){
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showScore, setShowScore] = useState(false);
-    const [score, setScore] = useState(0);
-    
-    const handleAnswerOptionClick = (selected) => {
-        setScore(score + selected);
+    const [prog, setProg] = useState(0);
+
+    const [eori, seteroi] = useState(0);
+    const [sorn, setsorn] = useState(0);
+    const [torf, settorf] = useState(0);
+    const [jorp, setjorp] = useState(0);
+
+    const handleAnswerOptionClick = (selectedeori, selectedsorn, selectedtorf, selectedjorp) => {
+        seteroi(eori + selectedeori);
+        setsorn(sorn + selectedsorn);
+        settorf(torf + selectedtorf);
+        setjorp(jorp + selectedjorp);
+
         const nextQuestion = currentQuestion + 1;
+        setProg(prog + 8.33)
         if(nextQuestion < questions.length) {
             setCurrentQuestion(nextQuestion);
         }
@@ -21,6 +31,25 @@ function Test(){
         }
     }
 
+    const parse = (eori, sorn, torf, jorp) => {
+        if(eori >= 0 && sorn >= 0 && torf < 0 && jorp >= 0) return 0; //ESFJ
+        if(eori >= 0 && sorn < 0 && torf < 0 && jorp < 0) return 1; //ENFP
+        if(eori < 0 && sorn >= 0 && torf < 0 && jorp >= 0) return 2; //ISFJ
+        if(eori < 0 && sorn < 0 && torf >= 0 && jorp < 0) return 3; //INTP
+        if(eori < 0 && sorn >= 0 && torf < 0 && jorp < 0) return 4; //ISFP
+        if(eori < 0 && sorn >= 0 && torf >= 0 && jorp < 0) return 5; //ISTP
+        if(eori >= 0 && sorn >= 0 && torf < 0 && jorp < 0) return 6; //ESFP
+        if(eori >= 0 && sorn < 0 && torf < 0 && jorp >= 0) return 7; //ENFJ
+        if(eori >= 0 && sorn >= 0 && torf >= 0 && jorp >= 0) return 8; //ESTJ
+        if(eori >= 0 && sorn >= 0 && torf >= 0 && jorp < 0) return 9; //ESTP
+        if(eori < 0 && sorn < 0 && torf < 0 && jorp < 0) return 10; //INFP
+        if(eori < 0 && sorn < 0 && torf >= 0 && jorp >= 0) return 11; //INTJ
+        if(eori >= 0 && sorn < 0 && torf >= 0 && jorp < 0) return 12; //ENTP
+        if(eori >= 0 && sorn < 0 && torf >= 0 && jorp >= 0) return 13; //ENTJ
+        if(eori < 0 && sorn < 0 && torf < 0 && jorp >= 0) return 14; //INFJ
+        if(eori < 0 && sorn >= 0 && torf >= 0 && jorp >= 0) return 15; //ISTJ
+    }
+    
     return(
         <div>
             <div class = "home">
@@ -31,10 +60,10 @@ function Test(){
             {showScore?(
                 <div class='result'>
                     <div class='result-text'>
-                        We recommend you to <span class='name'>{results[parseInt(score/5)].result}</span>!
+                        We recommend you <span class='name'>{results[parse(eori, sorn, torf, jorp)].result}</span>!
                     </div>
                     <div class='result-photo'>
-                        <img src={results[parseInt(score/5)].photo} alt = "photo" width="20%" height="20%"/>
+                        <img src={results[parse(eori, sorn, torf, jorp)].photo} alt = "photo" width="20%" height="20%"/>
                     </div>
                     <div class='explana'>
                         <span class="result_like">
@@ -58,17 +87,16 @@ function Test(){
                     </div>
 
                     <div class='answers'>
-                        <span class="agree">Agree</span>
-                        <button class='fiv answer' onClick={() => handleAnswerOptionClick(10)}></button>
-                        <button class='fou answer' onClick={() => handleAnswerOptionClick(7)}></button>
-                        <button class='thr answer' onClick={() => handleAnswerOptionClick(5)}></button>
-                        <button class='two answer' onClick={() => handleAnswerOptionClick(3)}></button>
-                        <button class='one answer' onClick={() => handleAnswerOptionClick(0)}></button>
-                        <span class="disagree">Disagree</span>
+                        {questions[currentQuestion].answerOptions.map((answerOption) => (
+                            <button class = 'answer' onClick={() => handleAnswerOptionClick(answerOption.eori, answerOption.sorn, answerOption.torf, answerOption.jorp)}>{answerOption.answerText}</button>
+                        ))}
                     </div>
                     
                     <div class='left'>
-                        <span>Question {currentQuestion+1}</span>/{questions.length}
+                        <div class="progress">
+                            <div class="filter" style={{width: prog + '%'}}></div>
+                        </div>
+                        <span>{currentQuestion}</span>&nbsp;/&nbsp;{questions.length}
                     </div>
                 </>
             )}
