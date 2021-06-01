@@ -43,15 +43,15 @@ function ReviewPage(){
     const [viewContent, setViewContent] = useState([{
         id: 1,
         content: "It was a very special experience for me, but my weekend is gone. One day for traveling, and one day for rest", 
-        like: 2, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["travel", "hiking"], date: "210523", active: -1
+        like: 2, total: 3.0, interest: 4.0, schedule: 1.0, hashtag: ["travel", "hiking"], date: "210523", active: -1
         },{
         id: 2,
         content: 'It was really fun :)', 
-        like: 3, total: 4.5, interest: 5.0, schedule: 4.0, hashtag: ["cooking"], date: "210524", active: -1
+        like: 3, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["cooking"], date: "210524", active: -1
         },{
         id: 3,
         content: "Someone who rides a skateboard with me~", 
-        like: 4, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["skateboard", "board", "friend"], date: "210523", active: -1
+        like: 4, total: 2.0, interest: 2.0, schedule: 2.0, hashtag: ["skateboard", "board", "friend"], date: "210523", active: -1
         },{
         id: 4,
         content: "When I was in middle school, I was in the school band. I played the guitar after a long time and I remembered that time. But it takes too long. Also purchasing new guitar is too expensive.\n Most guitar academies also require a personal guitar.", 
@@ -63,7 +63,7 @@ function ReviewPage(){
         },{
         id: 6,
         content: "KAIST LIBRARY IS SO WONDERFUL", 
-        like: 3, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["reading"], date: "210411", active: -1
+        like: 3, total: 5.0, interest: 3.0, schedule: 3.0, hashtag: ["reading"], date: "210411", active: -1
     }])
 
     const [dataContent, setDataContent] = useState([...viewContent])
@@ -190,6 +190,9 @@ function ReviewPage(){
         let year = today.getFullYear(); // 년도
         let month = today.getMonth() + 1;  // 월
         let todayDate = today.getDate();  // 날짜
+        if (todayDate < 10){
+            todayDate = "0" + todayDate
+        }
         let showDate = year%100 + "0" +month+todayDate
         newreview.date = showDate
         setReview(newreview)
@@ -203,6 +206,10 @@ function ReviewPage(){
         var newArr = [...dataContent]
 
         newArr.push(newRev)
+        setSelAlign({
+            align: "date"
+        })
+        // #################################
         setDataContent(newArr)
         setViewContent(newArr)
     }
@@ -299,6 +306,9 @@ function ReviewPage(){
         setValSearch({
             val:""
         })
+        setSelAlign({
+            align:"date"
+        })
     }
 
     const [valSearch, setValSearch] = useState({
@@ -343,7 +353,7 @@ function ReviewPage(){
                     <div className="search-hashtag" onMouseOver={showDel} onMouseLeave={hideDel}>searched:&nbsp;&nbsp;&nbsp;{searchContent.hashtag}&nbsp;&nbsp;&nbsp;
                     { searchShow.show ? <FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faTimes} onClick={endSearch}/> : <FontAwesomeIcon icon={faTimes} style={{visibility: 'hidden'}}/>}
                     </div>
-                    <select style = {{cursor: 'pointer'}} className="select" onChange={selectChange}>
+                    <select style = {{cursor: 'pointer'}} className="select" onChange={selectChange} value={selAlign.align}>
                         <option value="date">Recent Date</option>
                         <option value="score">High Score</option>
                         <option value="hearts">Likes</option>
@@ -363,10 +373,10 @@ function ReviewPage(){
                                 {element.total %1 == 0 ? <span>{element.total}.0</span> : <span>{element.total}</span>}
                             </div>
                             <div className="score">interest: 
-                                {element.total %1 == 0 ? <span>{element.interest}.0</span> : <span>{element.interest}</span>}
+                                {element.interest %1 == 0 ? <span>{element.interest}.0</span> : <span>{element.interest}</span>}
                             </div>
                             <div className="score">schedule: 
-                                {element.total %1 == 0 ? <span>{element.schedule}.0</span> : <span>{element.schedule}</span>}
+                                {element.schedule %1 == 0 ? <span>{element.schedule}.0</span> : <span>{element.schedule}</span>}
                             </div>
                         
                             
