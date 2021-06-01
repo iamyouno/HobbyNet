@@ -546,7 +546,7 @@ function ReviewPage(){
               close();
             }}
           >
-            close
+            Close
           </button>
           <button
             style = {{cursor: 'pointer'}}
