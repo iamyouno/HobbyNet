@@ -184,7 +184,7 @@ function Schedule(){
         
         <div>
             <div className="home">
-                <Link to ='/' >
+                <Link to ='/hobbynet' >
                     <div className="main33">HobbyNet</div>
                 </Link>
 
