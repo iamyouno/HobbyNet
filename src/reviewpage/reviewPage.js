@@ -421,10 +421,10 @@ function ReviewPage(){
     <table id ="first">
           <tbody>
     <tr><td className="vert" id="vertical1">    <span><h2>
-        Add categories:</h2></span><div>
+        Add Hashtags:</h2></span><div>
       <label>
       <input className="cateinput"
-                placeholder=" type here"
+                placeholder=" ex)guitar"
               value={hastag.input}
               onChange={handleInputChange}
               onKeyDown={handleInputKeyDown}  ref={cateInput} /><button style = {{cursor: 'pointer'}} id="cateenter" onClick={handleCateEnter}>Enter</button>
