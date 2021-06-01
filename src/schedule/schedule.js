@@ -2,8 +2,8 @@ import React, {useRef, useState, useEffect} from 'react';
 import home from './Homeicon.png';
 import './schedule.css';
 import { Link } from 'react-router-dom';
-import Modal from './Modal';
-import Modal2 from './Modal2';
+import Modal from './Modal.js';
+import Modal2 from './Modal2.js';
 import timedist from './Timedist.png'
 
 
@@ -152,7 +152,7 @@ function Schedule(){
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 
             </div>
             <div className ="hobbyinfo">
@@ -164,7 +164,7 @@ function Schedule(){
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
 
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                 
             </div>
             <div className ="hobbyinfo">
@@ -175,7 +175,7 @@ function Schedule(){
                 <p/><br/>
                 <React.Fragment><button className="seereview" onClick={openModal2}>Show Time Distribution</button><p/>
                 <Modal2 open={modalOpen2} close={closeModal2} header="Time Distribution" > <img src={timedist} width='570px' height='450px'></img></Modal2> </React.Fragment>
-                <Link to = './reviewPage'><button className="seereview">See Reviews</button><p/></Link>
+                <Link to = '/hobbynet/reviewPage'><button className="seereview">See Reviews</button><p/></Link>
                
             </div>
             </div>
@@ -189,7 +189,7 @@ function Schedule(){
                 </Link>
 
             </div>
-
+        <span className = "addyourfixed"><h3 style={{fontSize:"30px"}}>Add your fixed scheule on the table</h3></span>
         <div className="little__container">
             
             <div className="recommend__hobby">
@@ -260,43 +260,12 @@ function Schedule(){
 
             </div>
 
-            
-
-
             <div className="container">
-                <div className ="fixed__container">
-
- 
-            <h1><center>Select a fixed schedule</center></h1>
-            
-            <div className="task__container">
-
-                <div ref={taskRef1} className="task__name" id="work" onClick={selectTask} style={{backgroundColor: "#f68080"}}>Work</div>
-                <div ref={taskRef2} className="task__name" id="meal" onClick={selectTask} style={{backgroundColor: "#faae7b"}}>Meal</div>
-                <div ref={taskRef3} className="task__name" id="sleep" onClick={selectTask} style={{backgroundColor: "#f7f779"}}>Sleep</div>
-                <div ref={taskRef4} className="task__name" id="gym" onClick={selectTask} style={{backgroundColor: "#2a9d8f"}}>Gym</div>
-                <div ref={taskRef5} className="task__name" id="any" onClick={selectTask} style={{backgroundColor: "#bdb2ff"}}>Any</div>
-                <div ref={taskRef6} className="task__name" id="delete" onClick={selectTask} style={{backgroundColor: "white"}}>Erase</div>
                 
-                <button className="deleteBtn" onClick={openPopup}>Reset Schedule</button>
 
-                <div ref={taskRef9} className="pop-up__container">
-                    <div className="pop-up">
-                        <br/><h4>Are you sure you want to delete all the tasks from your schedule?</h4>
-                        <div className="btn__container">
-                            <div ref={taskRef10} className="btn__answer" id="btn__yes" onClick={deleteTasks}>YES</div>
-                            <div ref={taskRef10} className="btn__answer" id="btn__no" onClick={closePopup}>NO</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            </div>
             <br/>
 
-            <h3 style={{fontSize:"30px"}}>Add your fixed scheule on the table</h3>
             <div className="little__container">
-
             <div className="schedule__container">
                 <div className="days__container">
                     <span className="corner"></span>
@@ -471,6 +440,29 @@ function Schedule(){
                 </div>
 
 
+
+            </div>
+
+            <div className="task__container">
+
+                <div ref={taskRef1} className="task__name" id="work" onClick={selectTask} style={{backgroundColor: "#f68080"}}>Work</div>
+                <div ref={taskRef2} className="task__name" id="meal" onClick={selectTask} style={{backgroundColor: "#faae7b"}}>Meal</div>
+                <div ref={taskRef3} className="task__name" id="sleep" onClick={selectTask} style={{backgroundColor: "#f7f779"}}>Sleep</div>
+                <div ref={taskRef4} className="task__name" id="gym" onClick={selectTask} style={{backgroundColor: "#2a9d8f"}}>Gym</div>
+                <div ref={taskRef5} className="task__name" id="any" onClick={selectTask} style={{backgroundColor: "#bdb2ff"}}>Any</div>
+                <div ref={taskRef6} className="task__name" id="delete" onClick={selectTask} style={{backgroundColor: "white"}}>Erase</div>
+                
+                <button className="deleteBtn" onClick={openPopup}>Reset Schedule</button>
+
+                <div ref={taskRef9} className="pop-up__container">
+                    <div className="pop-up">
+                        <br/><h4>Are you sure you want to delete all the tasks from your schedule?</h4>
+                        <div className="btn__container">
+                            <div ref={taskRef10} className="btn__answer" id="btn__yes" onClick={deleteTasks}>YES</div>
+                            <div ref={taskRef10} className="btn__answer" id="btn__no" onClick={closePopup}>NO</div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
