@@ -1,68 +1,37 @@
 .question {
     font-weight:bold;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     color: black;
 }
 
 .answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
     text-align: center;
     color: white;
     font-size: 30px;
 }
 
 .answer {
-    border-radius: 100%;
     background-color: white;
-    margin: 3%;
-    margin-top: 5%;
+    width: 45%;
+    font-size: 20px;
+    margin: 1%;
     cursor: pointer;
+    padding: 1%;
+    border-radius: 7px;
+    border: 2px solid #5594C5;
+    background-color: white;
+    transition: all 0.2s ease 0s;
 }
 
-.fiv {
-    padding: 2.5%;
-    border: 3px solid green;
-}
-
-.fiv:hover {
-    background-color: green;
-}
-
-.fou {
-    padding: 2%;
-    border: 3px solid green;
-}
-
-.fou:hover {
-    background-color: green;
-}
-
-.thr {
-    padding: 1.5%;
-    border: 3px solid gray;
-}
-
-.thr:hover {
-    background-color: gray;
-}
-
-.two {
-    padding: 2%;
-    border: 3px solid purple;
-}
-
-.two:hover {
-    background-color: purple;
-}
-
-.one {
-    padding: 2.5%;
-    border: 3px solid purple;
-}
-
-.one:hover {
-    background-color: purple;
+.answer:hover {
+    background-color: #5594C5;
+    color: white;
 }
 
 .result-text {
@@ -107,6 +76,7 @@
     padding: 10%;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.2s ease 0s;
 }
 
 .info:hover {
@@ -129,6 +99,7 @@
     padding: 8%;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.2s ease 0s;
 }
 
 .try:hover {
@@ -137,21 +108,32 @@
     color: white;
 }
 
-.agree {
-    font-weight: bold;
-    color: green;
-}
-
-.disagree {
-    font-weight: bold;
-    color: purple;
-}
-
 .left {
-    margin-top: 10%;
-    font-size:30px;
-    text-align: center;
-    color: black;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 5%;
+    position: absolute;
+    left: 30vw;
+    bottom: 10vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.progress {
+    height: 8px;
+    flex: 1 1 0%;
+    background-color: gray;
+    border-radius: 50px;
+    margin-right: 16px;
+}
+
+.filter {
+    height: 100%;
+    background-color: rgb(74, 235, 74);
+    border-radius: inherit;
+    transition: all 0.2s ease 0s;
 }
 
 .name {

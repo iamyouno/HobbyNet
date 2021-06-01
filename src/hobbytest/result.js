@@ -1,49 +1,84 @@
-import game from "./pngs/gaming.png"
-import movie from "./pngs/popcorn.png"
-import music from "./pngs/headphones.png"
-import book from "./pngs/book.png"
+import tea from "./pngs/green-tea.png"
+import wine from "./pngs/wine.png"
+import gardening from "./pngs/gardening.png"
 import draw from "./pngs/crayons.png"
-import cook from "./pngs/soup.png"
-import travel from "./pngs/suitcases.png"
-import hike from "./pngs/hiking.png"
-import training from "./pngs/treadmill.png"
+import baking from "./pngs/bake.png"
+import instrument from "./pngs/guitar.png"
+import board from "./pngs/chess.png"
+import vlog from "./pngs/youtuber.png"
+import yoga from "./pngs/lotus.png"
+import boxing from "./pngs/boxing-glove.png"
+import tarot from "./pngs/tarot.png"
+import writing from "./pngs/notes.png"
+import rc from "./pngs/comic.png"
+import sfl from "./pngs/languages.png"
+import cs from "./pngs/cross-stitch.png"
+import pm from "./pngs/model.png"
 
 const results = [
     {
-        result: "PC games",
-        photo: game
+        result: "tea",
+        photo: tea
     },
     {
-        result: "watching movies",
-        photo: movie
+        result: "yoga",
+        photo: yoga
     },
     {
-        result: "listening to music",
-        photo: music
-    },
-    {
-        result: "reading",
-        photo: book
+        result: "gardening",
+        photo: gardening
     },
     {
         result: "drawing",
         photo: draw
     },
     {
-        result: "cooking",
-        photo: cook
+        result: "home baking",
+        photo: baking
     },
     {
-        result: "travel",
-        photo: travel
+        result: "playing instrument",
+        photo: instrument
     },
     {
-        result: "hiking",
-        photo: hike
+        result: "board game",
+        photo: board
     },
     {
-        result: "working out",
-        photo: training
+        result: "Vlog",
+        photo: vlog
+    },
+    {
+        result: "wine",
+        photo: wine
+    },
+    {
+        result: "boxing",
+        photo: boxing
+    },
+    {
+        result: "tarot card reading",
+        photo: tarot
+    },
+    {
+        result: "writing",
+        photo: writing
+    },
+    {
+        result: "reading comics",
+        photo: rc
+    },
+    {
+        result: "studying foreign languages",
+        photo: sfl
+    },
+    {
+        result: "cross stitch",
+        photo: cs
+    },
+    {
+        result: "plastic model",
+        photo: pm
     }
 ]
 
