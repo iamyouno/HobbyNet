@@ -350,9 +350,6 @@ function ReviewPage(){
         setValSearch({
             val:""
         })
-        setSelAlign({
-            align:"date"
-        })
     }
 
     const [valSearch, setValSearch] = useState({
