@@ -7,7 +7,8 @@
 }
 
 .home{
-    margin:2%;
+    margin-left:5%;
+    width:fit-content;
     
    
 }
@@ -28,7 +29,7 @@
 
 .addyourfixed {
     position: absolute;
-    top: 13vh;
+    top: 11vh;
     left: 47vw;
 }
 
