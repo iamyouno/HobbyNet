@@ -606,7 +606,7 @@ function ReviewPage(){
               Submit()
               console.log('Accept');
               close();}
-              else{alert("Add category!")}
+              else{alert("Add hashtag!")}
             }}
           >
             Accept
