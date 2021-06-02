@@ -65,33 +65,43 @@ function ReviewPage(){
         content: "I recommend playing musical instruments to those who do their best to enjoy the present while still doing their job silently. You'll probably improve soon if you learn a musical instrument. Guitar or ukulele is good, and Kalimba is popular these days, too. There is also a digital piano that doesn't take up much space. It would be fun to take a video of the performance and share it with others or upload it on YouTube.", 
         like: 3, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["playing instrument", "instrument", "guitar", "ukulele"], date: "210411", active: -1
         },{
+        id: 7,
         content: "I'm sure you've played Jenga or Halli Galli. If you want to compete with strategy and intelligence, I recommend you Splender and Rumicube, and for party, speed quiz that requires quickness is a very good game.", 
         like: 1, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["board game", "Jenga", "HalliGalli"], date: "210413", active: -1
         },{
+        id: 8,
         content: "Forget the stereotype that you should go to a good place and record it as if you were writing a diary. Do you know that smartphones solve everything from shooting to editing these days? However, pay attention to personal information or portrait rights of others when you post it on the Internet.", 
         like: 6, total: 4.0, interest: 4.0, schedule: 4.0, hashtag: ["Vlog", "Youtube"], date: "210326", active: -1
         },{
+        id: 9,
         content: "How about adding yoga to your fixed-routine to train your body and mind? It would be best to learn from professional instructors offline, but many people also train yoga through videos or online classes. With only the will to do it and the yoga mat, you can 'yoga' well.", 
         like: 10, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["yoga"], date: "210313", active: -1
         },{
+        id: 10,
         content: "Boxing is a good exercise to burn a lot of calories in a short time. It's a misunderstanding if you think it's boring because it's a solo exercise. Do you know the tap ball? If you use the tap ball, which is the most cost-effective toy and exercise equipment, you can find yourself that love boxing.", 
         like: 8, total: 5.0, interest: 5.0, schedule: 4.5, hashtag: ["boxing"], date: "210226", active: -1
         },{
+        id: 11,
         content: "Tarot cards, of course, are superstitious, but they are intellectual entertainment with their own depth and fun. The result of the card is determined by probability, but it is up to the person to interpret the result. Use your imagination and storytelling to predict the fate of you and your friends. Enjoying the beautiful design of the card is a bonus.", 
         like: 2, total: 4.5, interest: 4.5, schedule: 5.0, hashtag: ["tarot", "tarot card reading"], date: "210113", active: -1
         },{
+        id: 12,
         content: "Plastic model is a hobby that can both inspire creativity and entertainment. Many people would think of figures and Gundam when you hear plastic model. Of course, it's a good choice if you're interested in related content, but there's a more general choice like miniature houses. If you don't experience the sense of accomplishment by making a beautiful place with your own hands, you'll never know. The finished work is perfect for interior accessories.", 
         like: 3, total: 4.0, interest: 4.5, schedule: 3.5, hashtag: ["plastic model", "gundam"], date: "210223", active: -1
         },{
+        id: 13,
         content: "It's really good to make a habit of writing. There are many things you can write. Writing a diary is good, and you can run a blog or try a brunch writer or a web novel writer. Even if you don't set specific goals and write for them, writing itself helps you protect your self-esteem and mental health.", 
         like: 11, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["writing", "diary", "blog"], date: "210111", active: -1
         },{
+        id: 14,
         content: "In a complicated world, let's go for a hobby that's comfortable. There are many fun comics like Marvel, DC comics, and etc. Let's enjoy it together!", 
         like: 8, total: 4.5, interest: 4.5, schedule: 4.5, hashtag: ["comic", "comics", "reading comics"], date: "210322", active: -1
         },{
+        id: 15,
         content: "I would like to recommend you to study foreign languages if you don't have too much pressure to study in your spare time. Even if you don't travel abroad or do anything related, understanding the language of other countries helps you a lot in your daily life. For example, it would be useful to watch movies or search the web in that language, right? The view of the world itself also expands.", 
         like: 6, total: 4.5, interest: 4.5, schedule: 4.0, hashtag: ["studying foreign languages", "foreign languages", "languages"], date: "210213", active: -1
         },{
+        id: 16,
         content: "It is a hobby recommended to people with concentration and endurance. It's a quite difficult hobby, but the satisfaction with the results is considerable. There's nothing more fun than doing DIY while watching radio or YouTube.", 
         like: 2, total: 4.5, interest: 5.0, schedule: 3.5, hashtag: ["cross stitch", "knitting"], date: "210126", active: -1
         }
