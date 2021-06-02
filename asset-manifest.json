@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hobbynet/static/css/main.c4de7ba7.chunk.css",
-    "main.js": "/hobbynet/static/js/main.f18f88e0.chunk.js",
-    "main.js.map": "/hobbynet/static/js/main.f18f88e0.chunk.js.map",
+    "main.js": "/hobbynet/static/js/main.a944bb0f.chunk.js",
+    "main.js.map": "/hobbynet/static/js/main.a944bb0f.chunk.js.map",
     "runtime-main.js": "/hobbynet/static/js/runtime-main.ee2c5fce.js",
     "runtime-main.js.map": "/hobbynet/static/js/runtime-main.ee2c5fce.js.map",
     "static/css/2.23154d62.chunk.css": "/hobbynet/static/css/2.23154d62.chunk.css",
@@ -40,6 +40,6 @@
     "static/css/2.23154d62.chunk.css",
     "static/js/2.41235d3c.chunk.js",
     "static/css/main.c4de7ba7.chunk.css",
-    "static/js/main.f18f88e0.chunk.js"
+    "static/js/main.a944bb0f.chunk.js"
   ]
 }
