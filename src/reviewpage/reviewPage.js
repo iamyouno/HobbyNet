@@ -350,6 +350,10 @@ function ReviewPage(){
         setValSearch({
             val:""
         })
+        // setSelAlign({
+        //     align: "score"
+        // })
+        //////////////////////////////////
     }
 
     const [valSearch, setValSearch] = useState({
