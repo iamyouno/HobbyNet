@@ -52,7 +52,7 @@ function Test(){
     
     return(
         <div>
-            <div class = "home">
+            <div class = "homeicon">
                 <Link to='/hobbynet'>
                     <img src={home} alt="home" width="3%" height="3%"/>
                 </Link>
