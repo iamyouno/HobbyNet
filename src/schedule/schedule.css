@@ -301,12 +301,12 @@ a{
 
 /* Pop up */
 .pop-up__container{
-    position: absolute;
+    position: fixed;
     
     top: 0;
     left: 0;
     z-index: 99;
-    height: 300%;
+    height: 200%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
@@ -320,7 +320,7 @@ a{
     display: flex;
     flex-direction: column;
     
-    margin-top: 30%;
+    margin-top: 20%;
     align-items: center;
     background-color: #E2F1F3;
     padding: 15px;
