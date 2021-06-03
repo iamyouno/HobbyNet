@@ -28,21 +28,19 @@ by CS374, team Passionista
 
 - Recommend you to choose as clearly as you can :)
 
-- You can start test by clicking "click to test"!
-
 - You can get more information by clicking "See review", or you can test it again by clicking "Try again"
 
 ### 2.2. Review system
 
 - You can look around reviews that other users have already written.
 
-- If you like some review, you can give "like" to click heart icon.
+- If you like some review, you can give "like".
 
 - You can use search bar or select box to find specific reviews.
 
-- After looking aroud, leave your own hobby review:)
+- After looking around, leave your own hobby review:)
 
-- you can leave comments and your schedule, rate points for the chosen categories. 
+- you can leave comments and your schedule, rate points for the chosen hashtags. 
 
 ### 2.3. Hobby timetable
 
