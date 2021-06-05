@@ -72,6 +72,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 .review-container {
     padding: 3% 10% 5% 10%;
+    background-color:rgb(246, 249, 250);
     /* padding-top: 2%; */
 }
 
@@ -107,43 +108,74 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .review-each {
     /* display: flex; */
+    display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 1.5% auto;
     width: 60%;
-    border: 1px solid rgb(150, 150, 150);
-    padding: 10px 20px 10px 20px;
+    border: 0px solid rgb(150, 150, 150);
     border-radius: 10px;
+    box-shadow: 3px 3px 8px #949494;
     margin-top: 10px;
     background-color: white;
     line-height: 150%;
+}
+
+.color-header {
+    /* display: flex; */
+    display:block;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    /*background-color: #5f64a8;*/
+    background-color:#5594C5;
+    color:white;
 }
 
 .date {
     font-size: 12px;
     color:rgb(150, 150, 150);
     margin-bottom: 5px;
+    display: block;
 }
 
 .review-content {
     white-space: pre-line;
     word-break: break-all;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-bottom: 10px;
+    color:rgb(56, 58, 83);
 }
 
 .hashtag-container {
     margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
 }
 
 .hashtag {
     margin-right: 3px;
-    font-size: 12px;
-    color:rgb(150, 150, 150);
+    font-size: 25px;
+    /*color:rgb(114, 105, 10);*/
+    color: black;
 }
 
 
 .review-footer {
     display: flex;
-    margin-top: auto;
     /* width: 80%; */
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    width: 100%;
+    background-color: #d0d1db;
+    color:rgb(0, 0, 0);
+    padding:3px;
 }
 
 .score {
@@ -151,8 +183,10 @@ input::-webkit-search-results-decoration { display: none; }
     
     float: left;
     margin-right: 10px;
-    margin-top: auto;
-    font-size: 12px;
+    margin-top: 3px;
+    margin-left:15px;
+    font-size: 15px;
+    margin-bottom: 5px;
     /* flex: none; */
 }
 
@@ -161,8 +195,10 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .like {
     margin-left: auto;
-    /* margin-right: 10px; */
-    font-size: 15px;
+    margin-right: 10px;
+    margin-top:3px;
+    font-size: 20px;
+
     /* margin: 0 10px 0 0; */
 }
 

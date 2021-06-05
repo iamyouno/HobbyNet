@@ -256,6 +256,23 @@ function ReviewPage(){
         // #################################
         setDataContent(newArr)
         setViewContent(newArr)
+        setReview({
+            content: '',
+            like: 0,
+            total: parseFloat(0),
+            interest: 0,
+            schedule: 0,
+            hashtag: [],
+            date: "0",
+            active: -1
+        })
+        setdayday([{ day:"MON", yes: false, time:[0,0,0,0]},{day:'TUE',yes: false, time:[0,0,0,0] },
+{day:"WED", yes: false,time:[0,0,0,0] },{day:'THU',yes: false, time:[0,0,0,0] },{day:'FRI', yes: false,time:[0,0,0,0] },{day:'SAT', yes: false,time:[0,0,0,0] },
+{day:'SUN',yes: false, time:[0,0,0,0] }])
+        setss({
+            items: [],
+            focused: false,
+            })
     }
 
     const handleInputChange=(evt)=> {
@@ -407,12 +424,13 @@ function ReviewPage(){
             
                 {viewContent.length == 0 ? <div className="noResCon"><div className="noResult">no result</div></div> : viewContent.map( (element, index) => 
                     <div className="review-each">
-                        <div className="date">{String(element.date).substring(0, 2)}/{String(element.date).substring(2, 4)}/{String(element.date).substring(4, 6)}</div>
-                        <div className="review-content" >{element.content}</div>
+                        <div className="color-header">{String(element.date).substring(0, 2)} / {String(element.date).substring(2, 4)} / {String(element.date).substring(4, 6)}</div>
+                        <div className="date"></div>
                         <div className="hashtag-container">
                             {element.hashtag.map( (e) => <span className="hashtag">#{e}</span>)}
 
                         </div>
+                        <div className="review-content" >{element.content}</div>
                         <div className="review-footer">
                             <div className="score">total score: 
                                 {element.total %1 == 0 ? <span>{element.total}.0</span> : <span>{element.total}</span>}
