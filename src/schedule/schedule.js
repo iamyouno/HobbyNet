@@ -144,7 +144,7 @@ function Schedule(){
     const renderCondition = showList
         ? <div className = "shownList">
             <div className ="hobbyinfo">
-                <h2><span className="hobbyname">Movie</span></h2><br/>
+                <h2><span className="hobbyname">#movie</span></h2><br/>
                 <h4><span className="infoname">Average Time : 2 hours</span></h4>
                 <br/>
                 <h4><span className="infoname">Rating : 4.7 / 5.0 </span></h4>
@@ -156,7 +156,7 @@ function Schedule(){
                 
             </div>
             <div className ="hobbyinfo">
-                <h2><span className="hobbyname">Cooking</span></h2><br/>
+                <h2><span className="hobbyname">#cooking</span></h2><br/>
                 <h4><span className="infoname">Average Time : 1.5 hours</span></h4>
                 <br/>
                 <h4><span className="infoname">Rating : 4.3 / 5.0 </span></h4>
@@ -168,7 +168,7 @@ function Schedule(){
                 
             </div>
             <div className ="hobbyinfo">
-                <h2><span className="hobbyname">Game</span></h2><br/>
+                <h2><span className="hobbyname">#game</span></h2><br/>
                 <h4><span className="infoname">Average Time : 2 hours</span></h4>
                 <br/>
                 <h4><span className="infoname">Rating : 3.5 / 5.0 </span></h4>
