@@ -463,7 +463,7 @@ function ReviewPage(){
                         <div className="review-content" >
                         {/* {element.content} */}
                         {toggleEllipsis(element.content, element.limit).string}
-                        {toggleEllipsis(element.content, element.limit).isShowMore && <span className="review-seeMore" onClick={seeMore(index)}> ...더보기</span>}
+                        {toggleEllipsis(element.content, element.limit).isShowMore && <span className="review-seeMore" style={{color: '#5594C5'}} onClick={seeMore(index)}>... See more</span>}
                         
                         </div>
                         <div className="review-footer">
