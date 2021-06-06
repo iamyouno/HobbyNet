@@ -43,73 +43,73 @@ function ReviewPage(){
     const [viewContent, setViewContent] = useState([{
         id: 2,
         content: 'Wine is becoming a popular hobby. Good wines are being sold at a lower price than your thought. A sip with a simple side dish like cheese or canape with Netflix is a good friend of wine. Drinking alone is also good, and I think it would be good to have a small home party with your close friends. There is also non-alcoholic wine for people who can not drink well.', 
-        like: 3, total: 4.5, interest: 5.0, schedule: 4.0, hashtag: ["wine", "winery"], date: "210524", active: -1
+        like: 3, total: 4.5, interest: 5.0, schedule: 4.0, hashtag: ["wine", "winery"], date: "210524", active: -1, limit: 150
         },{
         id: 1,
         content: "Tea is a hobby that you enjoy with various senses. The scent and taste, as well as the beautiful design of teacups and bowls, and the touch of pottery are among the pleasures of this hobby. Both black and green tea have their own charms. Tea is not a expensive hobby anymore. If you look for a little bit, you can easily get a reasonable price of tea.", 
-        like: 2, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["tea", "green-tea", "black-tea"], date: "210523", active: -1
+        like: 2, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["tea", "green-tea", "black-tea"], date: "210523", active: -1, limit: 150
         },{
         id: 3,
         content: "Looking at the steadily growing plants, you can feel rewarded and decorating the house green is a very pleasant experience. Edible herbs such as rosemary and basil can be harvested and placed on the table. You can cook with them. If it hard to spend time for gardening, I recommend you to start with succulent plant that grows well without much care.", 
-        like: 4, total: 3.5, interest: 4.0, schedule: 3.0, hashtag: ["gardening", "succulent"], date: "210523", active: -1
+        like: 4, total: 3.5, interest: 4.0, schedule: 3.0, hashtag: ["gardening", "succulent"], date: "210523", active: -1, limit: 150
         },{
         id: 5,
         content: "How about baking that you can share good things with good people? It would be great to have an oven, but there are many desserts that can be made without an oven. There are also many inexpensive mini ovens these days. Have a happy hobby with dessert that makes your eyes and mouth happy together!", 
-        like: 3, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["cooking", "baking", "bread"], date: "210417", active: -1
+        like: 3, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["cooking", "baking", "bread"], date: "210417", active: -1, limit: 150
         },{
         id: 4,
         content: "How about expressing your world in drawings? These days, you can take good online classes at relatively low prices. Painting that you started as a hobby can be a valuable one day. Of course, it is fun to draw, and that's enough.", 
-        like: 7, total: 4.0, interest: 4.0, schedule: 4.0, hashtag: ["drawing", "painting"], date: "210411", active: -1  
+        like: 7, total: 4.0, interest: 4.0, schedule: 4.0, hashtag: ["drawing", "painting"], date: "210411", active: -1, limit: 150  
         },{
         id: 6,
         content: "I recommend playing musical instruments to those who do their best to enjoy the present while still doing their job silently. You'll probably improve soon if you learn a musical instrument. Guitar or ukulele is good, and Kalimba is popular these days, too. There is also a digital piano that doesn't take up much space. It would be fun to take a video of the performance and share it with others or upload it on YouTube.", 
-        like: 3, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["playing instrument", "instrument", "guitar", "ukulele"], date: "210326", active: -1
+        like: 3, total: 4.0, interest: 5.0, schedule: 3.0, hashtag: ["playing instrument", "instrument", "guitar", "ukulele"], date: "210326", active: -1, limit: 150
         },{
         id: 7,
         content: "I'm sure you've played Jenga or Halli Galli. If you want to compete with strategy and intelligence, I recommend you Splender and Rumicube, and for party, speed quiz that requires quickness is a very good game.", 
-        like: 1, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["board game", "Jenga", "HalliGalli"], date: "210319", active: -1
+        like: 1, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["board game", "Jenga", "HalliGalli"], date: "210319", active: -1, limit: 150
         },{
         id: 8,
         content: "Forget the stereotype that you should go to a good place and record it as if you were writing a diary. Do you know that smartphones solve everything from shooting to editing these days? However, pay attention to personal information or portrait rights of others when you post it on the Internet.", 
-        like: 6, total: 4.0, interest: 4.0, schedule: 4.0, hashtag: ["Vlog", "Youtube"], date: "210314", active: -1
+        like: 6, total: 4.0, interest: 4.0, schedule: 4.0, hashtag: ["Vlog", "Youtube"], date: "210314", active: -1, limit: 150
         },{
         id: 9,
         content: "How about adding yoga to your fixed-routine to train your body and mind? It would be best to learn from professional instructors offline, but many people also train yoga through videos or online classes. With only the will to do it and the yoga mat, you can 'yoga' well.", 
-        like: 10, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["yoga"], date: "210313", active: -1
+        like: 10, total: 4.5, interest: 4.0, schedule: 5.0, hashtag: ["yoga"], date: "210313", active: -1, limit: 150
         },{
         id: 10,
         content: "Boxing is a good exercise to burn a lot of calories in a short time. It's a misunderstanding if you think it's boring because it's a solo exercise. Do you know the tap ball? If you use the tap ball, which is the most cost-effective toy and exercise equipment, you can find yourself that love boxing.", 
-        like: 8, total: 5.0, interest: 5.0, schedule: 4.5, hashtag: ["boxing"], date: "210226", active: -1
+        like: 8, total: 5.0, interest: 5.0, schedule: 4.5, hashtag: ["boxing"], date: "210226", active: -1, limit: 150
         },{
         id: 11,
         content: "Tarot cards, of course, are superstitious, but they are intellectual entertainment with their own depth and fun. The result of the card is determined by probability, but it is up to the person to interpret the result. Use your imagination and storytelling to predict the fate of you and your friends. Enjoying the beautiful design of the card is a bonus.", 
-        like: 2, total: 4.5, interest: 4.5, schedule: 5.0, hashtag: ["tarot", "tarot card reading"], date: "210223", active: -1
+        like: 2, total: 4.5, interest: 4.5, schedule: 5.0, hashtag: ["tarot", "tarot card reading"], date: "210223", active: -1, limit: 150
         },{
         id: 12,
         content: "Plastic model is a hobby that can both inspire creativity and entertainment. Many people would think of figures and Gundam when you hear plastic model. Of course, it's a good choice if you're interested in related content, but there's a more general choice like miniature houses. If you don't experience the sense of accomplishment by making a beautiful place with your own hands, you'll never know. The finished work is perfect for interior accessories.", 
-        like: 3, total: 4.0, interest: 4.5, schedule: 3.5, hashtag: ["plastic model", "gundam"], date: "210221", active: -1
+        like: 3, total: 4.0, interest: 4.5, schedule: 3.5, hashtag: ["plastic model", "gundam"], date: "210221", active: -1, limit: 150
         },{
         id: 13,
         content: "It's really good to make a habit of writing. There are many things you can write. Writing a diary is good, and you can run a blog or try a brunch writer or a web novel writer. Even if you don't set specific goals and write for them, writing itself helps you protect your self-esteem and mental health.", 
-        like: 11, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["writing", "diary", "blog"], date: "210131", active: -1
+        like: 11, total: 5.0, interest: 5.0, schedule: 5.0, hashtag: ["writing", "diary", "blog"], date: "210131", active: -1, limit: 150
         },{
         id: 14,
         content: "In a complicated world, let's go for a hobby that's comfortable. There are many fun comics like Marvel, DC comics, and etc. Let's enjoy it together!", 
-        like: 8, total: 4.5, interest: 4.5, schedule: 4.5, hashtag: ["comic", "comics", "reading comics"], date: "210124", active: -1
+        like: 8, total: 4.5, interest: 4.5, schedule: 4.5, hashtag: ["comic", "comics", "reading comics"], date: "210124", active: -1, limit: 150
         },{
         id: 15,
         content: "I would like to recommend you to study foreign languages if you don't have too much pressure to study in your spare time. Even if you don't travel abroad or do anything related, understanding the language of other countries helps you a lot in your daily life. For example, it would be useful to watch movies or search the web in that language, right? The view of the world itself also expands.", 
-        like: 6, total: 4.5, interest: 4.5, schedule: 4.0, hashtag: ["studying foreign languages", "foreign languages", "languages"], date: "210122", active: -1
+        like: 6, total: 4.5, interest: 4.5, schedule: 4.0, hashtag: ["studying foreign languages", "foreign languages", "languages"], date: "210122", active: -1, limit: 150
         },{
         id: 16,
         content: "It is a hobby recommended to people with concentration and endurance. It's a quite difficult hobby, but the satisfaction with the results is considerable. There's nothing more fun than doing DIY while watching radio or YouTube.", 
-        like: 2, total: 4.5, interest: 5.0, schedule: 3.5, hashtag: ["cross stitch", "knitting"], date: "210116", active: -1
+        like: 2, total: 4.5, interest: 5.0, schedule: 3.5, hashtag: ["cross stitch", "knitting"], date: "210116", active: -1, limit: 150
         }
     ])
 
     const [dataContent, setDataContent] = useState([...viewContent])
 
-    const nextId = useRef(7);
+    const nextId = useRef(17);
 
     const getValue = e => {
         const {name, value} = e.target
@@ -173,6 +173,7 @@ function ReviewPage(){
         setSelAlign({
             align: e.target.value
         })
+        allSeeLimit()
     }
 
     useEffect( () => {
@@ -273,6 +274,7 @@ function ReviewPage(){
             items: [],
             focused: false,
             })
+            allSeeLimit()
     }
 
     const handleInputChange=(evt)=> {
@@ -367,6 +369,7 @@ function ReviewPage(){
         setValSearch({
             val:""
         })
+        allSeeLimit()
         // setSelAlign({
         //     align: "score"
         // })
@@ -401,11 +404,36 @@ function ReviewPage(){
         cateInput.current.value="";
     }}
 
+    // const [limit, setLimit] = useState(150);
+    const toggleEllipsis = (str, limit) => {
+        return {
+            string: str.slice(0, limit),
+            isShowMore: str.length > limit
+        }
+    }
+
+    const seeMore = index => e => {
+        var newArr = [...viewContent]
+        newArr[index].limit = newArr[index].content.length
+        // newArr[index].active = newArr[index].active * -1
+        setViewContent(newArr)
+        console.log("hi")
+    }
+    
+    const allSeeLimit = () => {
+        var newArr = [...viewContent]
+        for (let i=0; i<newArr.length; i++){
+            newArr[i].limit = 150
+        }
+        setViewContent(newArr)
+    } 
+
+
     return(
         
         <div className="review-body">
             <div className="header">
-                <div className="title"><Link to ='/hobbynet' style={{textDecoration:'none', color:'inherit', fontWeight:'bold'}}>HobbyNet</Link></div>
+                {/* <div className="title"><Link to ='/hobbynet' style={{textDecoration:'none', color:'inherit', fontWeight:'bold'}}>HobbyNet</Link></div> */}
                 <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val} onKeyPress={onKeyPress}></input>
                 <div ><FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
@@ -413,7 +441,9 @@ function ReviewPage(){
             <div className="review-container">
                 <div className="review-header">
                     <div className="search-hashtag" onMouseOver={showDel} onMouseLeave={hideDel}>searched:&nbsp;&nbsp;&nbsp;{searchContent.hashtag}&nbsp;&nbsp;&nbsp;
-                    { searchShow.show ? <FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faTimes} onClick={endSearch}/> : <FontAwesomeIcon icon={faTimes} style={{visibility: 'hidden'}}/>}
+                    {/* { searchShow.show ? <FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faTimes} onClick={endSearch}/> : <FontAwesomeIcon icon={faTimes} style={{visibility: 'hidden'}}/>} */}
+                    <FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faTimes} onClick={endSearch}/>
+
                     </div>
                     <select style = {{cursor: 'pointer'}} className="select" onChange={selectChange} value={selAlign.align}>
                         <option value="date">Recent Date</option>
@@ -427,10 +457,15 @@ function ReviewPage(){
                         <div className="color-header">{String(element.date).substring(0, 2)} / {String(element.date).substring(2, 4)} / {String(element.date).substring(4, 6)}</div>
                         <div className="date"></div>
                         <div className="hashtag-container">
-                            {element.hashtag.map( (e) => <span className="hashtag">#{e}</span>)}
+                            {element.hashtag.map( (e) => <span className="hashtag">#{e}&nbsp;&nbsp;</span>)}
 
                         </div>
-                        <div className="review-content" >{element.content}</div>
+                        <div className="review-content" >
+                        {/* {element.content} */}
+                        {toggleEllipsis(element.content, element.limit).string}
+                        {toggleEllipsis(element.content, element.limit).isShowMore && <span className="review-seeMore" onClick={seeMore(index)}> ...더보기</span>}
+                        
+                        </div>
                         <div className="review-footer">
                             <div className="score">total score: 
                                 {element.total %1 == 0 ? <span>{element.total}.0</span> : <span>{element.total}</span>}

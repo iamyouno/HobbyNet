@@ -34,9 +34,9 @@
     /* bottom: 0;
     left: 35%; */
     margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 28%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
     /* height: 50vh;  */
     font-size: 20px; 
     color: rgb(150, 150, 150);
@@ -72,7 +72,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 .review-container {
     padding: 3% 10% 5% 10%;
-    background-color:rgb(246, 249, 250);
+    /* background-color:rgb(246, 249, 250); */
     /* padding-top: 2%; */
 }
 
@@ -117,7 +117,8 @@ input::-webkit-search-results-decoration { display: none; }
     box-shadow: 3px 3px 8px #949494;
     margin-top: 10px;
     background-color: white;
-    line-height: 150%;
+    line-height: 170%;
+    word-spacing: 3px;
 }
 
 .color-header {
@@ -148,9 +149,15 @@ input::-webkit-search-results-decoration { display: none; }
     padding-left: 15px;
     padding-right:15px;
     padding-bottom: 10px;
-    color:rgb(56, 58, 83);
+    /* color:rgb(56, 58, 83); */
+    color:rgb(141, 141, 141);
+
+
 }
 
+.review-seeMore:hover {
+    cursor: pointer;
+}
 .hashtag-container {
     margin-top: 5px;
     padding-top: 10px;
