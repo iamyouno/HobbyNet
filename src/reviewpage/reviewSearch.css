@@ -1,3 +1,15 @@
+.header .search {
+    height: 6vh;
+    width: 48vw;
+    position: absolute;
+    left: 26vw;
+}
+
+.header .search-icon {
+    right: 28vw;
+    top: 12vh;
+}
+
 .bigwrapper{
     display:table;
     margin-left:auto; 

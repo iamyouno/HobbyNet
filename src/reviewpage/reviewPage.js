@@ -11,6 +11,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import ReactStars from "react-rating-stars-component";
 import delete_X from "./delete_X.png";
+import logo from "../logo.png"
 
 function ReviewPage(){
     const [review, setReview] = useState({
@@ -275,7 +276,6 @@ function ReviewPage(){
             items: [],
             focused: false,
             })
-
     }
 
     const handleInputChange=(evt)=> {
@@ -434,7 +434,11 @@ function ReviewPage(){
         
         <div className="review-body">
             <div className="header">
-                {/* <div className="title"><Link to ='/hobbynet' style={{textDecoration:'none', color:'inherit', fontWeight:'bold'}}>HobbyNet</Link></div> */}
+                <div class = "homeicon">
+                <Link to='/hobbynet'>
+                    <img src={logo} alt="logo"/>
+                </Link>
+                </div>
                 <input type="search" className="search" placeholder="search" onChange={getValue} value={valSearch.val} onKeyPress={onKeyPress}></input>
                 <div ><FontAwesomeIcon style = {{cursor: 'pointer'}} icon={faSearch} id="icon" className="search-icon" onClick={goSearch}/></div>
             </div>
