@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Modal from './Modal.js';
 import Modal2 from './Modal2.js';
 import timedist from './Timedist.png'
-
+import logo from "../logo.png"
 
 
 function Schedule(){
@@ -183,11 +183,10 @@ function Schedule(){
     return(
         
         <div>
-            <div className="home">
-                <Link to ='/hobbynet' >
-                    <div className="main33">HobbyNet</div>
+            <div class = "homeicon">
+                <Link to='/hobbynet'>
+                    <img src={logo} alt="logo"/>
                 </Link>
-
             </div>
         <span className = "addyourfixed"><h3 style={{fontSize:"30px"}}>Add your fixed scheule on the table</h3></span>
         <div className="little__container">
