@@ -3,14 +3,14 @@ import {Link} from 'react-router-dom'
 import "./hobbyTest.css"
 import timer from "./pngs/chronometer.png"
 import ban from "./pngs/ban.png"
-import home from "./pngs/home.png"
+import logo from "../logo.png"
 
 function hobbyTest(){
     return(
         <div class = "test_main">
             <div class = "homeicon">
                 <Link to='/hobbynet'>
-                    <img src={home} alt="home" width="3%" height="3%"/>
+                    <img src={logo} alt="logo"/>
                 </Link>
             </div>
             <div class = "explanation">
