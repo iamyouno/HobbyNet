@@ -3,11 +3,9 @@
     font-weight: bold;
     font-size: 100px;
     color: navy;
-    margin: 5%;
 }
 
 .main_buttons {
-    margin-top: 10%;
     display: flex;
     justify-content: center;
     height: 30vh;
@@ -42,4 +40,10 @@
     font-weight: bold;
     font-size: x-large;
     color: black;
+}
+
+.logo {
+    margin-top: 25vh;
+    margin-bottom: 5vh;
+    zoom: 50%;
 }

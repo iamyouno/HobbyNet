@@ -4,11 +4,12 @@ import './main.css'
 import test from './test.png'
 import review from './search.png'
 import timetable from './schedule.png'
+import logo from './logo.png'
 
 function main(){
     return(
         <div class = "main">
-            HobbyNet
+            <img src={logo} alt="logo" class="logo"/>
             <div class = "main_buttons">
                 <div class = "main_button test">
                     <Link to ='/hobbynet/hobbytest' style={{textDecoration: 'none'}}>
