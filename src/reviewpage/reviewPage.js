@@ -254,6 +254,7 @@ function ReviewPage(){
         setSelAlign({
             align: "date"
         })
+        allSeeLimit()
         // #################################
         setDataContent(newArr)
         setViewContent(newArr)
@@ -274,7 +275,7 @@ function ReviewPage(){
             items: [],
             focused: false,
             })
-            allSeeLimit()
+
     }
 
     const handleInputChange=(evt)=> {
