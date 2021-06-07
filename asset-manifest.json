@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/hobbynet/static/css/main.cc1c362c.chunk.css",
-    "main.js": "/hobbynet/static/js/main.509e1d6b.chunk.js",
-    "main.js.map": "/hobbynet/static/js/main.509e1d6b.chunk.js.map",
+    "main.css": "/hobbynet/static/css/main.d9fcd6b1.chunk.css",
+    "main.js": "/hobbynet/static/js/main.daa79b8a.chunk.js",
+    "main.js.map": "/hobbynet/static/js/main.daa79b8a.chunk.js.map",
     "runtime-main.js": "/hobbynet/static/js/runtime-main.ee2c5fce.js",
     "runtime-main.js.map": "/hobbynet/static/js/runtime-main.ee2c5fce.js.map",
     "static/css/2.23154d62.chunk.css": "/hobbynet/static/css/2.23154d62.chunk.css",
-    "static/js/2.41235d3c.chunk.js": "/hobbynet/static/js/2.41235d3c.chunk.js",
-    "static/js/2.41235d3c.chunk.js.map": "/hobbynet/static/js/2.41235d3c.chunk.js.map",
+    "static/js/2.a217f16a.chunk.js": "/hobbynet/static/js/2.a217f16a.chunk.js",
+    "static/js/2.a217f16a.chunk.js.map": "/hobbynet/static/js/2.a217f16a.chunk.js.map",
     "index.html": "/hobbynet/index.html",
     "static/css/2.23154d62.chunk.css.map": "/hobbynet/static/css/2.23154d62.chunk.css.map",
-    "static/css/main.cc1c362c.chunk.css.map": "/hobbynet/static/css/main.cc1c362c.chunk.css.map",
-    "static/js/2.41235d3c.chunk.js.LICENSE.txt": "/hobbynet/static/js/2.41235d3c.chunk.js.LICENSE.txt",
+    "static/css/main.d9fcd6b1.chunk.css.map": "/hobbynet/static/css/main.d9fcd6b1.chunk.css.map",
+    "static/js/2.a217f16a.chunk.js.LICENSE.txt": "/hobbynet/static/js/2.a217f16a.chunk.js.LICENSE.txt",
     "static/media/Timedist.66ae5da0.png": "/hobbynet/static/media/Timedist.66ae5da0.png",
     "static/media/bake.cc88da85.png": "/hobbynet/static/media/bake.cc88da85.png",
     "static/media/ban.85e41a9e.png": "/hobbynet/static/media/ban.85e41a9e.png",
@@ -26,6 +26,7 @@
     "static/media/green-tea.cd0ec100.png": "/hobbynet/static/media/green-tea.cd0ec100.png",
     "static/media/guitar.f8d414a1.png": "/hobbynet/static/media/guitar.f8d414a1.png",
     "static/media/languages.c9c76e03.png": "/hobbynet/static/media/languages.c9c76e03.png",
+    "static/media/logo.7d9d4fa4.png": "/hobbynet/static/media/logo.7d9d4fa4.png",
     "static/media/lotus.11eac64b.png": "/hobbynet/static/media/lotus.11eac64b.png",
     "static/media/model.ffaf22f6.png": "/hobbynet/static/media/model.ffaf22f6.png",
     "static/media/notes.a353fc64.png": "/hobbynet/static/media/notes.a353fc64.png",
@@ -38,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.ee2c5fce.js",
     "static/css/2.23154d62.chunk.css",
-    "static/js/2.41235d3c.chunk.js",
-    "static/css/main.cc1c362c.chunk.css",
-    "static/js/main.509e1d6b.chunk.js"
+    "static/js/2.a217f16a.chunk.js",
+    "static/css/main.d9fcd6b1.chunk.css",
+    "static/js/main.daa79b8a.chunk.js"
   ]
 }
